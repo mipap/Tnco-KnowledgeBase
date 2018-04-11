@@ -1,0 +1,2192 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+        <title>Mobile Support Team</title>
+        <link rel="icon" href="icon.png">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+        <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+        <link rel="stylesheet" href="https://team.wow2.telenor.com/sites/cs_TnCOServiceDesk/SiteAssets/SitePages/css/kb2.css">
+        <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+        <link href="telenor.ttf" rel="stylesheet">
+        <style>
+            *{
+            box-sizing: border-box;
+        }
+        
+        body {
+            margin: 0;
+            font-family: 'Telenor', sans-serif;
+        }
+        
+        .navbar {
+            overflow: hidden;
+            background-color: #13C6FF;
+            font-family: 'Telenor',Arial;
+            font-style: bold;
+        }
+        
+        .navbar a {
+            float: left;
+            font-size: 16px;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        
+        .dropdown {
+            float: left;
+            overflow: hidden;
+        }
+        .dropdown2 {
+          float: left;
+          overflow: hidden;
+        }
+        
+        .dropdown .dropbtn {
+            font-size: 16px;    
+            border: none;
+            outline: none;
+            color: white;
+            padding: 14px 16px;
+            background-color: inherit;
+            font-family: 'Telenor',Arial, Helvetica, sans-serif;
+        }
+        
+        .dropdown2 .dropbtn2 {
+            font-size: 16px;    
+            border: none;
+            outline: none;
+            color: white;
+            padding: 14px 16px;
+            background-color: inherit;
+            font-family: 'Telenor',Arial, Helvetica, sans-serif;
+        }
+        .navbar a:hover, .dropdown2:hover .dropbtn2 {
+            background-color: #13C6FF;
+            cursor: pointer;
+        }
+        
+        
+        .dropdown2-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            width: 100%;
+            left: 0;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 100;
+            font-family: 'Telenor',Arial, Helvetica, sans-serif;
+        }
+        
+        .dropdown-content .header {
+            background: #13C6FF;
+            padding: 16px;
+            color: white;
+            font-family: 'Telenor',Arial, Helvetica, sans-serif;
+        }
+        
+        .dropdown2-content .header {
+            background: #13C6FF;
+            padding: 16px;
+            color: white;
+            font-family: 'Telenor',Arial, Helvetica, sans-serif;
+        }
+        
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        
+        .dropdown2:hover .dropdown2-content {
+            display: block;
+        }
+        
+        /* Create three equal columns that floats next to each other */
+        .column {
+            float: left;
+            width: 25%;
+            line-height: 100%;
+            padding: 10px;
+            background-color: white; 
+            height: 100%;
+        }
+        
+        .column a {
+            float: none;
+            color: black;
+            padding: 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        
+        }
+        
+        .column a:hover {
+            background-color: #ddd;
+            height: 6%;
+        }
+        
+        /* Clear floats after the columns */
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+        .container {
+            overflow: hidden;
+            background-color: #13C6FF;
+            font-family: 'Telenor',Arial;
+            font-style: bold;
+        }
+        
+        .container a {
+            float: left;
+            font-size: 16px;
+            color: white;
+            text-align: center;
+            padding: 16px 16px;
+            text-decoration: none;
+        }
+        
+        .dropdown {
+            float: left;
+            overflow: hidden;
+        }
+        
+        .dropdown2 {
+          float: left;
+          overflow: hidden;
+        }
+        
+        .list {
+            float: left;
+            overflow: hidden;
+        }
+        
+        .kb {
+            float: left;
+            overflow: hidden;
+        }
+        .bp {
+            float: left;
+            overflow: hidden;
+        }
+        
+        .dropdown .dropbtn {
+            font-size: 16px;    
+            border: none;
+            outline: none;
+            color: white;
+            padding: 14px 16px;
+            background-color: #13C6FF;
+            font-family: 'Telenor',Arial, Helvetica, sans-serif;
+        }
+        
+        .dropdown2 .dropbtn2 {
+            font-size: 16px;    
+            border: none;
+            outline: none;
+            color: white;
+            padding: 14px 16px;
+            background-color: #13C6FF;
+            font-family: 'Telenor',Arial, Helvetica, sans-serif;
+        }
+        
+        .list .listbtn {
+            font-size: 16px;    
+            border: none;
+            outline: none;
+            color: white;
+            padding: 14px 16px;
+            background-color: #13C6FF;
+            font-family: 'Telenor',Arial, Helvetica, sans-serif;
+        }
+        
+        .kb .kbbtn {
+            font-size: 16px;    
+            border: none;
+            outline: none;
+            color: white;
+            padding: 14px 16px;
+            background-color: #13C6FF;
+            font-family: 'Telenor',Arial, Helvetica, sans-serif;
+        }
+        
+        .bp .bpbtn {
+            font-size: 16px;    
+            border: none;
+            outline: none;
+            color: white;
+            padding: 14px 16px;
+            background-color: #13C6FF;
+            font-family: 'Telenor',Arial, Helvetica, sans-serif;
+        }
+        
+        .container a:hover, .dropdown:hover .dropbtn {
+            background-color: #FEB100;
+            cursor: pointer;
+        }
+        
+        .container a:hover, .dropdown2:hover .dropbtn2 {
+            background-color: #FEB100;
+            cursor: pointer;
+        }
+        
+        .container a:hover, .list:hover .listbtn {
+            background-color: #FEB100;
+            cursor: pointer;
+        }
+        
+        .container a:hover, .kb:hover .kbbtn {
+            background-color: #FEB100;
+            cursor: pointer;
+        }
+        
+        .container a:hover, .bp:hover .bpbtn {
+            background-color: #FEB100;
+            cursor: pointer;
+        }
+        
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 100;
+        }
+        
+        .dropdown2-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 100;
+        }
+        
+        .list-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 100;
+        }
+        .kb-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+        
+        .bp-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 100;
+        }
+        
+        .dropdown-content a {
+            float: none;
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+        
+        .dropdown2-content a {
+            float: none;
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+        .list-content a {
+            float: none;
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+        .kb-content a {
+            float: none;
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+        
+        .bp-content a {
+            float: none;
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+        
+        .dropdown-content a:hover {
+            background: #ddd;
+        }
+        .dropdown2-content a:hover {
+            background-color: #ddd;
+        }
+        .column a:hover {
+          background-color: #ddd;
+        }
+        .list-content a:hover {
+            background-color: #ddd;
+        }
+        .kb-content a:hover {
+            background-color: #ddd;
+        }
+        
+        
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        .dropdown2:hover .dropdown2-content {
+            display: block;
+        }
+        .list:hover .list-content {
+            display: block;
+        }
+        .kb:hover .kb-content {
+            display: block;
+        }
+        
+        .bp:hover .bp-content {
+            display: block;
+        }
+        .hedding{
+            align-content: center;
+            padding: 2.8rem;
+            background: url(http://bgfons.com/uploads/lines/lines_texture1091.jpg);
+            color: #13C6FF;
+        }
+        
+        .words{
+        background: black;
+        border: 3px solid #13C6FF;
+        display: inline-block;
+        }
+        h1{
+            font-size: 5em !important;
+            font-weight: bolder !important;
+            color: white !important;
+            margin-top: -5%;
+        }
+        h3{
+            color: white !important;
+            font-weight: 700 !important;
+            font-size: 1.3em !important;
+        }
+        h2{
+            font-style: bold !important;
+            font-weight: 900 !important;
+            font-size: 2em !important;
+        }
+        .m-backtotop {
+      -webkit-transition: all 0.3s ease-in-out;
+      -moz-transition: all 0.3s ease-in-out;
+      -ms-transition: all 0.3s ease-in-out;
+      -o-transition: all 0.3s ease-in-out;
+      transition: all 0.3s ease-in-out;
+      position: fixed;
+      bottom: -50px;
+      right: 20px;
+      width: 50px;
+      height: 50px;
+      background: #222;
+      border-radius: 25px;
+      text-align: center;
+      border: 2px solid #fff;
+      box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
+      opacity: 0;
+      overflow: hidden;
+      color: #fff;
+    }
+    .m-backtotop.active {
+      bottom: 15px;
+      opacity: 1;
+    }
+    .m-backtotop > div {
+      -webkit-transition: all 0.3s ease-in-out;
+      -moz-transition: all 0.3s ease-in-out;
+      -ms-transition: all 0.3s ease-in-out;
+      -o-transition: all 0.3s ease-in-out;
+      transition: all 0.3s ease-in-out;
+    }
+    .m-backtotop > div.arrow {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translateY(-50%) translateX(-50%);
+      opacity: 1;
+    }
+    .m-backtotop > div.text {
+      font-size: 5px;
+      font-size: 0.5rem;
+      line-height: 10px;
+      text-transform: uppercase;
+      font-weight: 900;
+      font-family: "Open Sans", sans-serif;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translateY(50%) translateX(-50%);
+      opacity: 0;
+      margin-top: 1px;
+    }
+    .m-backtotop:hover {
+      transform: scale(1.1);
+      bottom: 20px;
+      cursor: pointer;
+      background: black;
+      box-shadow: 0 10px 5px rgba(0, 0, 0, 0.1);
+    }
+    .m-backtotop:hover > div.arrow {
+      transform: translateY(-150%) translateX(-50%);
+      opacity: 0;
+    }
+    .m-backtotop:hover > div.text {
+      transform: translateY(-50%) translateX(-50%);
+      opacity: 1;
+    }
+        
+        </style>
+    </head>
+    <body>
+            <div class="container">
+                    <a href="index.html">Home Page</a>
+                  <div class="bp">
+                    <button class="bpbtn" onclick="window.location.href='businessprocedures.html'">Business Procedures</button>
+                    <div class="bp-content">
+                        <a href="#">Ticket Administration</a>
+                        <a href="https://team.wow2.telenor.com/sites/cs_TnCOServiceDesk/_layouts/15/start.aspx#/Knowledge%20Base%20v1/Application%20and%20Billing/Custom%20fields%2C%20Custom%20text.aspx">Custom Fields</a>
+                        <a href="https://team.wow2.telenor.com/sites/cs_TnCOServiceDesk/Lists/Application%20and%20Billing%20Invalid%20Tickets/Weekly.aspx">Invalid Tickets</a>
+                        <a href="https://team.wow2.telenor.com/sites/cs_TnCOServiceDesk/Knowledge%20Base%20v1/Application%20and%20Billing/Procedure%20-%20Ticket%20Escalation.aspx">Escalation for AI</a>
+                        <a href="https://team.wow2.telenor.com/sites/cs_TnCOServiceDesk/Knowledge%20Base%20v1/Application%20and%20Billing/Escalations%20are%20used%20just%20for%20TI%20Team%20customers%20(tickets).aspx">Escalation for TI</a>
+                        <a href="https://team.wow2.telenor.com/sites/cs_TnCOServiceDesk/Lists/Billing%20vs%20CRM/AllItems.aspx">Billing v.s. CRM </a>
+                        <a href="#">Remedy Group Admin</a>
+                        <a href="https://team.wow2.telenor.com/sites/cs_TnCOServiceDesk/_layouts/15/start.aspx#/Knowledge%20Base%20v1/Application%20and%20Billing/Prospect%20Customer.aspx">Prospect Customer</a>        
+                        <a href="https://team.wow2.telenor.com/sites/cs_TnCOServiceDesk/Knowledge%20Base%20v1/Application%20and%20Billing/Procedure%20-%20Order%20Cancellations.aspx">Order Cancellation</a>
+                        <a href="https://team.wow2.telenor.com/sites/cs_TnCOServiceDesk/Knowledge%20Base%20v1/Application%20and%20Billing/Billing/Billing%20Instructions%20-%20Legacy%20Invoice%20Query.aspx">Legacy Invoice Query </a>
+                    </div>
+                  </div>
+                  <div class="dropdown">
+                    <button onclick="window.location.href='teammembers.html'" class="dropbtn">Team Members</button>
+                    <div id="myDropdown" class="dropdown-content">
+                        <input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()">
+                        <a href="teammembers.html#Csaba">Nagy Csaba</a>
+                      <a href="teammembers.html#DUSA">Dušan Vasić (DUSA)</a>
+                      <a href="teammembers.html#MTUR">Marko Turković (MTUR)</a>
+                      <a href="teammembers.html#MIPAP">Miloš Papić (MIPAP)</a>
+                      <a href="teammembers.html#PJOV">Pavle Jovanović (PJOV)</a>
+                      <a href="teammembers.html#JONV">Jovana Nikolić (JONV)</a>
+                      <a href="teammembers.html#REHIL">Rene Hiller (REHIL)</a>
+                      <a href="teammembers.html#PSIM">Petar Simić (PSIM)</a>
+                      <a href="teammembers.html#JOVC">Jovana Jovanović (JOVC)</a>
+                      <a href="teammembers.html#MVOJ">Marko Vojinović (MVOJ)</a>
+                      <a href="teammembers.html#KPEJ">Kristina Pejanović (KPEJ)</a>
+                      <a href="teammembers.html#VBEG">Višnja Begović (VBEG)</a>
+                      <a href="teammembers.html#ARIZ">Miloš Arizanović (ARIZ)</a>
+                      <a href="teammembers.html#IVRA">Ivana Radojičić (IVRA)</a>
+                      <a href="teammembers.html#JKAT">Jelena Katanić (JKAT)**</a>
+                      <a href="teammembers.html#STBR">Staša Počuča (STBR)**</a>
+                      <a href="#">**Maternaty Leave</a>
+                    </div>
+                  </div>
+                
+                  <div class="list">
+                    <button class="listbtn">Tools</button>
+                    <div class="list-content">
+                        <a href="https://team.wow2.telenor.com/sites/cs_TnCOServiceDesk/Knowledge%20Base%20v1/Application%20and%20Billing/Tools/Tools%20-%20Remedy.aspx">Remedy</a>
+                        <a href="https://sso.veris.telenor.eu/?clientName=CRM&referer=https%3A%2F%2Fbss.veris.telenor.eu%2Fcrm%2Findex_sso.jsp">Veris</a>
+                        <a href="#">JIRA</a>
+                        <a href="http://112.25.233.117:58080/OnlineServer/LoginAction.action">DMP Defect</a>
+                        <a href="https://verisdmp.support/OnlineServer/LoginAction.action">AISD DMP</a>
+                        <a href="#">Citrix BSS Portal</a>
+                        <a href="https://team.wow2.telenor.com/sites/cs_TnCOServiceDesk/Knowledge%20Base%20v1/Application%20and%20Billing/Tools/TDC%20Wholesale.aspx">TDC WholeSale</a>
+                <a href="https://team.wow2.telenor.com/sites/cs_TnCOServiceDesk/Knowledge%20Base%20v1/Application%20and%20Billing/Tools/Columbine.aspx">Columbine</a>
+                <a href="https://team.wow2.telenor.com/sites/cs_TnCOServiceDesk/Knowledge%20Base%20v1/Application%20and%20Billing/Tools/DSLMan.aspx">DSL Man</a>
+                <a href="https://team.wow2.telenor.com/sites/cs_TnCOServiceDesk/Knowledge%20Base%20v1/Application%20and%20Billing/Tools/FASIN.aspx">FASIN</a>
+                    </div>
+                  </div>
+                
+                  <div class="navbar">
+                  <div class="dropdown2">
+                    <button onclick="window.location.href='knowledgebasepage.html'" class="dropbtn2">Knowledge Base 
+                      <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div id="myDropdown2" class="dropdown2-content">
+                      <div class="header">
+                        <h2>Application & Billing Knowledge Base</h2>
+                        <input type="text" placeholder="Search.." id="myInput2" onkeyup="filterFunction2()">
+                      </div> 
+                      <div class="row">
+                        <div class="column">
+                          <h3>Mobile Support</h3>
+                          <a href="https://team.wow2.telenor.com/sites/cs_TnCOServiceDesk/Knowledge%20Base%20v1/Application%20and%20Billing/Mobile/Mobile%20Instructions%20-%20Assigning%20ViaPlay%20Voucher.aspx">Assigning ViaPlay Voucher</a>
+                          <a href="https://team.wow2.telenor.com/sites/cs_TnCOServiceDesk/Knowledge%20Base%20v1/Application%20and%20Billing/Mobile/Mobile%20Instructions%20-%20Viaplay%20vouchers.aspx">Viaplay Voucher(Old procedure)</a>
+                          <a href="https://team.wow2.telenor.com/sites/cs_TnCOServiceDesk/Knowledge%20Base%20v1/Application%20and%20Billing/Mobile/Mobile%20Instructions%20-%20Reserved%20Number.aspx">Reserved Number</a>
+                        <a href="https://team.wow2.telenor.com/sites/cs_TnCOServiceDesk/Knowledge%20Base%20v1/Application%20and%20Billing/Workflow%20search%20-%20System%20exception%20-%20The%20account%20is%20inactive.aspx">Workflow search - System exception - The account is inactive</a>
+                          <a href="https://team.wow2.telenor.com/sites/cs_TnCOServiceDesk/Knowledge%20Base%20v1/Application%20and%20Billing/Mobile/Mobile%20Instructions%20-%20Batch%20order%20checking%20status.aspx">Batch order checking status</a>
+                        <a href="https://team.wow2.telenor.com/sites/cs_TnCOServiceDesk/Knowledge%20Base%20v1/Application%20and%20Billing/Unpaid%20orders.aspx">Unpaid Orders</a>
+                        <a href="https://team.wow2.telenor.com/sites/cs_TnCOServiceDesk/Knowledge%20Base%20v1/Application%20and%20Billing/Mobile/Mobile%20Instructions%20-%20Order%20Managment%20-%20Office%20365.aspx">Order stucked with only office 365 from skyteam</a>
+                          <a href="https://team.wow2.telenor.com/sites/cs_TnCOServiceDesk/Knowledge%20Base%20v1/Application%20and%20Billing/Mobile/Mobile%20Instructions%20-%20Check%20if%20the%20number%20is%20online.aspx">Check if the number is online</a>
+                          <a href="https://team.wow2.telenor.com/sites/cs_TnCOServiceDesk/Knowledge%20Base%20v1/Application%20and%20Billing/Mobile/Mobile%20Instructions%20-%20Checking%20completed%20orders.aspx">Checking completed orders</a>
+                          <a href="https://team.wow2.telenor.com/sites/cs_TnCOServiceDesk/Knowledge%20Base%20v1/Application%20and%20Billing/Mobile/Mobile%20Instructions%20-%20Creating%20announcement.aspx">Create Announcement</a>
+                          <a href="https://team.wow2.telenor.com/sites/cs_TnCOServiceDesk/Knowledge%20Base%20v1/Application%20and%20Billing/Mobile/Mobile%20Instructions%20-%20Log%20into%20OCH%20KB.aspx">Log into OCH KB</a>
+                          <a href="https://team.wow2.telenor.com/sites/cs_TnCOServiceDesk/Knowledge%20Base%20v1/Application%20and%20Billing/Mobile/Mobile%20Instructions%20-%20Attachments%20from%20AI.aspx?WikiPageMode=Edit&InitialTabId=Ribbon.EditingTools.CPEditTab&VisibilityContext=WSSWikiPage">Attachments from AI</a>
+                          <a href="https://team.wow2.telenor.com/sites/cs_TnCOServiceDesk/Knowledge%20Base%20v1/Application%20and%20Billing/Mobile/Mobile%20Instructions%20-%20Checking%20DEFECT.aspx?WikiPageMode=Edit&InitialTabId=Ribbon.EditingTools.CPEditTab&VisibilityContext=WSSWikiPage">Checking DEFECT</a>
+                          <a href="https://team.wow2.telenor.com/sites/cs_TnCOServiceDesk/Knowledge%20Base%20v1/Application%20and%20Billing/Mobile/Mobile%20Instructions%20-%20Escalation%20ticket%20in%20Remedy.aspx">Escalation ticket in Remedy</a>
+                          <a href="https://team.wow2.telenor.com/sites/cs_TnCOServiceDesk/Knowledge%20Base%20v1/Application%20and%20Billing/Mobile/Mobile%20Instructions%20-%20Finding%20user%20in%20Remedy.aspx?WikiPageMode=Edit&InitialTabId=Ribbon.EditingTools.CPEditTab&VisibilityContext=WSSWikiPage">Finding user in Remedy</a>
+                          <a href="https://team.wow2.telenor.com/sites/cs_TnCOServiceDesk/Knowledge%20Base%20v1/Application%20and%20Billing/Mobile/Mobile%20Instructions%20-%20Searching%20Remedy%20ticket%20in%20Remedy.aspx?WikiPageMode=Edit&InitialTabId=Ribbon.EditingTools.CPEditTab&VisibilityContext=WSSWikiPage">Searching Remedy ticket in Remedy</a>
+                          <a href="https://team.wow2.telenor.com/sites/cs_TnCOServiceDesk/Knowledge%20Base%20v1/Application%20and%20Billing/Mobile/Mobile%20Instructions%20-%20Searching%20Vendor%20ticket%20in%20Remedy.aspx">Searching Vendor ticket in Remedy</a>
+                          <a href="https://team.wow2.telenor.com/sites/cs_TnCOServiceDesk/Knowledge%20Base%20v1/Application%20and%20Billing/Fixed/Mobile%20instructions%20-%20Order%20troubleshooting%20-%20NP%20Wait%20for%20Effective%20Date.aspx">NP Workflow, Check Effective day</a>
+                          <a href="https://team.wow2.telenor.com/sites/cs_TnCOServiceDesk/Knowledge%20Base%20v1/Application%20and%20Billing/Mobile/Mobile%20Instructions%20-%20Procedure%20-%20Office%20365.aspx">Procedure - Office 365</a>
+                          <a href="https://team.wow2.telenor.com/sites/cs_TnCOServiceDesk/Knowledge%20Base%20v1/Application%20and%20Billing/Mobile/Mobile%20Instructions%20-%20How%20to%20handle%20attachment%20in%20Remedy.aspx">How to handle attachment in Remedy </a>
+                          <a href="https://team.wow2.telenor.com/sites/cs_TnCOServiceDesk/Knowledge%20Base%20v1/Application%20and%20Billing/Mobile/Mobile%20Instructions%20-%20Push%20notification%20(e-mail).aspx">Push Notification (missing e-mail)</a>
+                        </div>
+                        <div class="column">
+                          <h3>Fixed Support</h3>
+                          <a href="https://team.wow2.telenor.com/sites/cs_TnCOServiceDesk/Knowledge%20Base%20v1/Application%20and%20Billing/Fixed/Fixed%20Instructions%20-%20How%20to%20check%20reserved%20number.aspx">How to check reserved number in Veris</a>
+                          <a href="https://team.wow2.telenor.com/sites/cs_TnCOServiceDesk/Knowledge%20Base%20v1/Application%20and%20Billing/Fixed/Fixed%20Instructions%20-%20TnCO%20Veris%20CRM%20-%20New%20Connection.aspx">Order Management / New Connection</a>
+                          <a href="https://team.wow2.telenor.com/sites/cs_TnCOServiceDesk/_layouts/15/start.aspx#/Knowledge%20Base%20v1/Application%20and%20Billing/Fixed/NP%20CODE%20REJECTION.aspx">NP CODE REJECTION</a>
+                          <a href="https://team.wow2.telenor.com/sites/cs_TnCOServiceDesk/Knowledge%20Base%20v1/Application%20and%20Billing/Fixed/Fixed%20Instructions%20-%20TnCO%20Veris%20CRM%20-%20Termination.aspx">Order Management / Termination</a>
+                          <a href="https://team.wow2.telenor.com/sites/cs_TnCOServiceDesk/Knowledge%20Base%20v1/Application%20and%20Billing/Fixed/Fixed%20Instructions%20-%20TnCO%20Veris%20CRM%20-%20POA%20step%20in%20order.aspx">Order Management / POA step in order</a>
+                          <a href="https://team.wow2.telenor.com/sites/cs_TnCOServiceDesk/Knowledge%20Base%20v1/Application%20and%20Billing/Fixed/Fixed%20Instructions%20-%20TnCO%20Veris%20CRM%20-%20Order%20Management%20-%20TDC%20Group%20-%20Jump%20New%20Connection%20PSTN%20-%20%E2%80%9Dwait%20file%20step%E2%80%9D.aspx">Order Management - TDC Group - Jump New Connection PSTN - "wait file step"</a>
+                          <a href="https://team.wow2.telenor.com/sites/cs_TnCOServiceDesk/Knowledge%20Base%20v1/Application%20and%20Billing/Fixed/Fixed%20Instructions%20-%20Checking%20DEFECT.aspx?WikiPageMode=Edit&InitialTabId=Ribbon.EditingTools.CPEditTab&VisibilityContext=WSSWikiPage">Checking DEFECT</a>
+                          <a href="https://team.wow2.telenor.com/sites/cs_TnCOServiceDesk/_layouts/15/start.aspx#/Knowledge%20Base%20v1/Application%20and%20Billing/Prospect%20Customer.aspx">Prospect Customer</a>
+                          <a href="https://team.wow2.telenor.com/sites/cs_TnCOServiceDesk/Knowledge%20Base%20v1/Application%20and%20Billing/Billing/Billing%20Instructions%20-%20Legacy%20Invoice%20Query.aspx">Legacy Invoice Query </a>          
+                          <a href="https://team.wow2.telenor.com/sites/cs_TnCOServiceDesk/Knowledge%20Base%20v1/Application%20and%20Billing/Fixed/Fixed%20instructions%20-%20Order%20troubleshooting%20-%20VoIP%20PortIN%20%20(NP%20Rejection).aspx">VoIP PortIN (NP Rejection) </a>
+                        </div>
+                        <div class="column">
+                          <h3>Channels Support</h3>
+                          <a href="https://team.wow2.telenor.com/sites/cs_TnCOServiceDesk/_layouts/15/start.aspx#/Knowledge%20Base%20v1/Application%20and%20Billing/Channels/%E2%80%8BChannels%20Instructions%20-%20Necessary%20information%20for%20investigation.aspx">Necessary information for investigation</a>
+                          <a href="https://team.wow2.telenor.com/sites/cs_TnCOServiceDesk/Knowledge%20Base%20v1/Application%20and%20Billing/Channels/WA%20for%20My%20Telenor%20Login(forgotten%20email).aspx">WA My Telenor LogIn</a>
+                        </div>
+                        <div class="column">
+                          <h3>SAP Support</h3>
+                          <a href="https://team.wow2.telenor.com/sites/cs_TnCOServiceDesk/Knowledge%20Base%20v1/Application%20and%20Billing/SAP/SAP%20Instructions%20-%20Checking%20orders%20for%20SAP%20issue.aspx">SAP Instructions - Checking orders for SAP issue</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="list">
+                    <button class="listbtn" onclick="window.location.href='onboarding.html'">OnBoarding2018</button>
+                    <div class="list-content">
+                        <a href="onboarding.html#introduction">Introduction</a>
+                        <a href="#">Chapter 1</a>
+                        <a href="#">Chapter 2</a>
+                        <a href="#">Chapter 3</a>
+                        <a href="#">Chapter 4</a>
+                        <a href="#">Quiz</a>
+                        
+                    </div>
+                  </div> 
+                </div>
+            
+            
+            <div class="search">
+            
+            
+            <style type="text/css">
+            input[type=text] {
+                width: 160px;
+                box-sizing: border-box;
+                border: 3px solid #ccc;
+                border-radius: 16px;
+                font-size: 16px;
+                background-color: white;
+                background-image: url('https://team.wow2.telenor.com/sites/cs_TnCOServiceDesk/Shared%20Documents/search.png');
+                background-position: 10px 10px; 
+                background-repeat: no-repeat;
+                padding: 16px 20px 16px 50px;
+                -webkit-transition: width 0.4s ease-in-out;
+                transition: width 0.4s ease-in-out;
+            }
+            
+            input[type=text]:focus {
+                width: 100%;
+            }
+            </style>
+            
+            
+            
+            </div>    
+            </div>
+            
+            <script>
+            /* Search script za KnowledgeBase*/
+            function myFunction2() {
+                document.getElementById("myDropdown2").classList.toggle("show");
+            }
+            
+            function filterFunction2() {
+                var input, filter, ul, li, a, i;
+                input = document.getElementById("myInput2");
+                filter = input.value.toUpperCase();
+                div = document.getElementById("myDropdown2");
+                a = div.getElementsByTagName("a");
+                for (i = 0; i < a.length; i++) {
+                    if (a[i].innerHTML.toUpperCase().indexOf(filter) > -1) {
+                        a[i].style.display = "";
+                    } else {
+                        a[i].style.display = "none";
+                    }
+                }
+            }
+            </script>
+            
+            
+            
+            <script>
+            /* When the user clicks on the button,
+            toggle between hiding and showing the dropdown content */
+            function myFunction() {
+                document.getElementById("myDropdown").classList.toggle("show");
+            }
+            
+            function filterFunction() {
+                var input, filter, ul, li, a, i;
+                input = document.getElementById("myInput");
+                filter = input.value.toUpperCase();
+                div = document.getElementById("myDropdown");
+                a = div.getElementsByTagName("a");
+                for (i = 0; i < a.length; i++) {
+                    if (a[i].innerHTML.toUpperCase().indexOf(filter) > -1) {
+                        a[i].style.display = "";
+                    } else {
+                        a[i].style.display = "none";
+                    }
+                }
+            }
+            </script>
+            
+            <script>
+            /* When the user clicks on the button,
+            toggle between hiding and showing the dropdown content */
+            function myFunction1() {
+                document.getElementById("myDropdown1").classList.toggle("show");
+            }
+            
+            function filterFunction1() {
+                var input, filter, ul, li, a, i;
+                input = document.getElementById("myInput1");
+                filter = input.value.toUpperCase();
+                div = document.getElementById("myDropdown1");
+                a = div.getElementsByTagName("a");
+                for (i = 0; i < a.length; i++) {
+                    if (a[i].innerHTML.toUpperCase().indexOf(filter) > -1) {
+                        a[i].style.display = "";
+                    } else {
+                        a[i].style.display = "none";
+                    }
+                }
+            }
+            </script>
+
+            <div class="hedding">
+                <h1 style="font-family: 'Telenor',Arial, Helvetica, sans-serif;padding:5%;text-align:center;">Mobile Support Team</h1>
+                    <h2>Schedule for Mobile Group of Dispatching tickets</h2>
+                <style>
+                  
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section, main {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* -------------------------------- 
+
+Primary style
+
+-------------------------------- */
+*, *::after, *::before {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: 'Telenor', sans-serif;
+  color: #222222;
+  background-color: white;
+}
+
+a {
+  color: #A2B9B2;
+  text-decoration: none;
+}
+
+/* -------------------------------- 
+
+Main Components 
+
+-------------------------------- */
+.cd-schedule {
+  position: relative;
+  margin: 2em 0;
+}
+
+.cd-schedule::before {
+  /* never visible - this is used in js to check the current MQ */
+  content: 'mobile';
+  display: none;
+}
+
+@media only screen and (min-width: 800px) {
+  .cd-schedule {
+    width: 90%;
+    max-width: 1400px;
+    margin: 2em auto;
+  }
+  .cd-schedule::after {
+    clear: both;
+    content: "";
+    display: block;
+  }
+  .cd-schedule::before {
+    content: 'desktop';
+  }
+}
+
+.cd-schedule .timeline {
+  display: none;
+}
+
+@media only screen and (min-width: 800px) {
+  .cd-schedule .timeline {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    padding-top: 50px;
+  }
+  .cd-schedule .timeline li {
+    position: relative;
+    height: 50px;
+  }
+  .cd-schedule .timeline li::after {
+    /* this is used to create the table horizontal lines */
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background: #EAEAEA;
+  }
+  .cd-schedule .timeline li:last-of-type::after {
+    display: none;
+  }
+  .cd-schedule .timeline li span {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  .cd-schedule .timeline li::after {
+    width: calc(100% - 60px);
+    left: 60px;
+  }
+  .cd-schedule .timeline li span {
+    display: inline-block;
+    transform: translateY(-50%);
+  }
+  .cd-schedule .timeline li:nth-of-type(2n) span {
+    display: none;
+  }
+}
+
+.cd-schedule .events {
+  position: relative;
+  z-index: 1;
+}
+
+.cd-schedule .events .events-group {
+  margin-bottom: 30px;
+}
+
+.cd-schedule .events .top-info {
+  width: 100%;
+  padding: 0 5%;
+}
+
+.cd-schedule .events .top-info > span {
+  display: inline-block;
+  line-height: 1.2;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.cd-schedule .events .events-group > ul {
+  position: relative;
+  padding: 0 5%;
+  /* force its children to stay on one line */
+  display: flex;
+  overflow-x: scroll;
+  -webkit-overflow-scrolling: touch;
+}
+
+.cd-schedule .events .events-group > ul::after {
+  /* never visible - used to add a right padding to .events-group > ul */
+  display: inline-block;
+  content: '-';
+  width: 1px;
+  height: 100%;
+  opacity: 0;
+  color: transparent;
+}
+
+.cd-schedule .events .single-event {
+  /* force them to stay on one line */
+  flex-shrink: 0;
+  float: left;
+  height: 150px;
+  width: 70%;
+  max-width: 300px;
+  box-shadow: inset 0 -3px 0 rgba(0, 0, 0, 0.2);
+  margin-right: 20px;
+  transition: opacity .2s, background .2s;
+}
+
+.cd-schedule .events .single-event:last-of-type {
+  margin-right: 5%;
+}
+
+.cd-schedule .events .single-event a {
+  display: block;
+  height: 100%;
+  padding: .8em;
+}
+
+@media only screen and (min-width: 550px) {
+  .cd-schedule .events .single-event {
+    width: 40%;
+  }
+}
+
+@media only screen and (min-width: 800px) {
+  .cd-schedule .events {
+    float: left;
+    width: 100%;
+  }
+  .cd-schedule .events .events-group {
+    width: 20%;
+    float: left;
+    border: 1px solid #EAEAEA;
+    /* reset style */
+    margin-bottom: 0;
+  }
+  .cd-schedule .events .events-group:not(:first-of-type) {
+    border-left-width: 0;
+  }
+  .cd-schedule .events .top-info {
+    /* vertically center its content */
+    display: table;
+    height: 50px;
+    border-bottom: 1px solid #EAEAEA;
+    /* reset style */
+    padding: 0;
+  }
+  .cd-schedule .events .top-info > span {
+    /* vertically center inside its parent */
+    display: table-cell;
+    vertical-align: middle;
+    padding: 0 .5em;
+    text-align: center;
+    /* reset style */
+    font-weight: normal;
+    margin-bottom: 0;
+  }
+  .cd-schedule .events .events-group > ul {
+    /* 19 is the number of list items in the .timeline */
+    height: 850px;
+    /* reset style */
+    display: block;
+    overflow: visible;
+    padding: 0;
+  }
+  .cd-schedule .events .events-group > ul::after {
+    clear: both;
+    content: "";
+    display: block;
+  }
+  .cd-schedule .events .events-group > ul::after {
+    /* reset style */
+    display: none;
+  }
+  .cd-schedule .events .single-event {
+    position: absolute;
+    z-index: 3;
+    /* top position and height will be set using js */
+    width: calc(100% + 2px);
+    left: -1px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1), inset 0 -3px 0 rgba(0, 0, 0, 0.2);
+    /* reset style */
+    flex-shrink: 1;
+    height: auto;
+    max-width: none;
+    margin-right: 0;
+  }
+  .cd-schedule .events .single-event a {
+    padding: 1.2em;
+  }
+  .cd-schedule .events .single-event:last-of-type {
+    /* reset style */
+    margin-right: 0;
+  }
+  .cd-schedule .events .single-event.selected-event {
+    /* the .selected-event class is added when an user select the event */
+    visibility: hidden;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  .cd-schedule .events {
+    /* 60px is the .timeline element width */
+    width: calc(100% - 60px);
+    margin-left: 60px;
+  }
+}
+
+.cd-schedule.loading .events .single-event {
+  /* the class .loading is added by default to the .cd-schedule element
+	   it is removed as soon as the single events are placed in the schedule plan (using javascript) */
+  opacity: 0;
+}
+
+.cd-schedule .event-name,
+.cd-schedule .event-date {
+  display: block;
+  color: white;
+  font-family: inherit;
+  font-weight: bold;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.cd-schedule .event-name {
+  font-size: 2.4rem;
+}
+
+@media only screen and (min-width: 800px) {
+  .cd-schedule .event-name {
+    font-size: 2rem;
+  }
+}
+
+.cd-schedule .event-date {
+  /* they are not included in the the HTML but added using JavScript */
+  font-size: 1.4rem;
+  opacity: .7;
+  line-height: 1.2;
+  margin-bottom: .2em;
+}
+
+.cd-schedule .single-event[data-event="event-1"],
+.cd-schedule [data-event="event-1"] .header-bg {
+  /* this is used to set a background color for the event and the modal window */
+  background: #13C6FF;
+}
+
+.cd-schedule .single-event[data-event="event-1"]:hover {
+  background: #618da1;
+}
+
+.cd-schedule .single-event[data-event="event-2"],
+.cd-schedule [data-event="event-2"] .header-bg {
+  background: #8053aa;
+}
+
+.cd-schedule .single-event[data-event="event-2"]:hover {
+  background: #513e63;
+}
+
+.cd-schedule .single-event[data-event="event-3"],
+.cd-schedule [data-event="event-3"] .header-bg {
+  background: rgb(102, 211, 178);
+}
+
+.cd-schedule .single-event[data-event="event-3"]:hover {
+  background: #b1c4be;
+}
+
+.cd-schedule .single-event[data-event="event-4"],
+.cd-schedule [data-event="event-4"] .header-bg {
+  background: #f6b067;
+}
+
+.cd-schedule .single-event[data-event="event-4"]:hover {
+  background: #FEB100;
+}
+
+.cd-schedule .event-modal {
+  position: fixed;
+  z-index: 3;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  visibility: hidden;
+  /* Force Hardware acceleration */
+  transform: translateZ(0);
+  transform: translateX(100%);
+  transition: transform .4s, visibility .4s;
+  transition-timing-function: cubic-bezier(0.5, 0, 0.1, 1);
+}
+
+.cd-schedule .event-modal .header {
+  position: relative;
+  height: 70px;
+  /* vertically center its content */
+  display: table;
+  width: 100%;
+}
+
+.cd-schedule .event-modal .header .content {
+  position: relative;
+  z-index: 3;
+  /* vertically center inside its parent */
+  display: table-cell;
+  vertical-align: middle;
+  padding: .6em 5%;
+}
+
+.cd-schedule .event-modal .body {
+  position: relative;
+  width: 100%;
+  /* 70px is the .header height */
+  height: calc(100% - 70px);
+}
+
+.cd-schedule .event-modal .event-info {
+  position: relative;
+  z-index: 2;
+  line-height: 1.4;
+  height: 100%;
+  overflow: hidden;
+}
+
+.cd-schedule .event-modal .event-info > div {
+  overflow: auto;
+  height: 100%;
+  padding: 1.4em 5%;
+}
+
+.cd-schedule .event-modal .header-bg, .cd-schedule .event-modal .body-bg {
+  /* these are the morphing backgrounds - visible on desktop only */
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  font-family: 'Telenor',sans-serif;
+  color: black;
+}
+
+.cd-schedule .event-modal .body-bg {
+  z-index: 1;
+  background: white;
+  transform-origin: top left;
+  font-family: inherit;
+}
+
+.cd-schedule .event-modal .header-bg {
+  z-index: 2;
+  transform-origin: top center;
+}
+
+.cd-schedule .event-modal .close {
+  /* this is the 'X' icon */
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 3;
+  background: rgba(0, 0, 0, 0.1);
+  /* replace text with icon */
+  color: transparent;
+  white-space: nowrap;
+  text-indent: 100%;
+  height: 70px;
+  width: 70px;
+}
+
+.cd-schedule .event-modal .close::before, .cd-schedule .event-modal .close::after {
+  /* these are the two lines of the 'X' icon */
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 2px;
+  height: 22px;
+  background: white;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.cd-schedule .event-modal .close::before {
+  transform: translateX(-50%) translateY(-50%) rotate(45deg);
+}
+
+.cd-schedule .event-modal .close::after {
+  transform: translateX(-50%) translateY(-50%) rotate(-45deg);
+}
+
+.cd-schedule .event-modal .event-date {
+  display: none;
+}
+
+.cd-schedule .event-modal.no-transition {
+  transition: none;
+}
+
+.cd-schedule .event-modal.no-transition .header-bg, .cd-schedule .event-modal.no-transition .body-bg {
+  transition: none;
+}
+
+@media only screen and (min-width: 800px) {
+  .cd-schedule .event-modal {
+    /* reset style */
+    right: auto;
+    width: auto;
+    height: auto;
+    transform: translateX(0);
+    will-change: transform, width, height;
+    transition: height .4s, width .4s, transform .4s, visibility .4s;
+    transition-timing-function: cubic-bezier(0.5, 0, 0.1, 1);
+  }
+  .cd-schedule .event-modal .header {
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    height: 100%;
+  }
+  .cd-schedule .event-modal .header .content {
+    /* reset style */
+    display: block;
+    padding: .8em;
+  }
+  .cd-schedule .event-modal .event-info > div {
+    padding: 2em 3em 2em 2em;
+  }
+  .cd-schedule .event-modal .body {
+    height: 100%;
+    width: auto;
+  }
+  .cd-schedule .event-modal .header-bg, .cd-schedule .event-modal .body-bg {
+    /* Force Hardware acceleration */
+    transform: translateZ(0);
+    will-change: transform;
+    backface-visibility: hidden;
+  }
+  .cd-schedule .event-modal .header-bg {
+    transition: transform .4s;
+    transition-timing-function: cubic-bezier(0.5, 0, 0.1, 1);
+  }
+  .cd-schedule .event-modal .body-bg {
+    opacity: 0;
+    transform: none;
+  }
+  .cd-schedule .event-modal .event-date {
+    display: block;
+  }
+  .cd-schedule .event-modal .close, .cd-schedule .event-modal .event-info {
+    opacity: 0;
+  }
+  .cd-schedule .event-modal .close {
+    width: 40px;
+    height: 40px;
+    background: transparent;
+  }
+  .cd-schedule .event-modal .close::after, .cd-schedule .event-modal .close::before {
+    background: #222222;
+    height: 16px;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  .cd-schedule .event-modal .header .content {
+    padding: 1.2em;
+  }
+}
+
+.cd-schedule.modal-is-open .event-modal {
+  /* .modal-is-open class is added as soon as an event is selected */
+  transform: translateX(0);
+  visibility: visible;
+}
+
+.cd-schedule.modal-is-open .event-modal .event-info > div {
+  /* smooth scroll on iOS touch devices */
+  -webkit-overflow-scrolling: touch;
+}
+
+@media only screen and (min-width: 800px) {
+  .cd-schedule.animation-completed .event-modal .close,
+  .cd-schedule.content-loaded.animation-completed .event-modal .event-info {
+    /* 	the .animation-completed class is added when the modal animation is completed
+			the .content-loaded class is added when the modal content has been loaded (using ajax) */
+    opacity: 1;
+    transition: opacity .2s;
+  }
+  .cd-schedule.modal-is-open .body-bg {
+    opacity: 1;
+    transition: transform .4s;
+    transition-timing-function: cubic-bezier(0.5, 0, 0.1, 1);
+  }
+}
+
+.cd-schedule .cover-layer {
+  /* layer between the content and the modal window */
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity .4s, visibility .4s;
+}
+
+.cd-schedule.modal-is-open .cover-layer {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* -------------------------------- 
+
+xnugget info 
+
+-------------------------------- */
+.cd-intro h1 {
+  text-align: center;
+  padding: 2.6em 5% .8em;
+  font-weight: bold;
+  font-size: 3rem;
+}
+
+@media only screen and (min-width: 1000px) {
+  .cd-intro h1 {
+    font-size: 4rem;
+    padding: 2em 5% .8em;
+  }
+}
+
+.cd-nugget-info {
+  text-align: center;
+  position: absolute;
+  width: 100%;
+  height: 50px;
+  line-height: 50px;
+  top: 0;
+  left: 0;
+}
+
+.cd-nugget-info a {
+  position: relative;
+  font-size: 14px;
+  color: #A2B9B2;
+  transition: all .2s;
+}
+
+.cd-nugget-info a:hover {
+  opacity: .8;
+}
+
+.cd-nugget-info span {
+  vertical-align: middle;
+  display: inline-block;
+}
+
+.cd-nugget-info span svg {
+  display: block;
+}
+
+.cd-nugget-info .cd-nugget-info-arrow {
+  fill: #A2B9B2;
+}
+
+/* -------------------------------- 
+
+xcarbonads 
+
+-------------------------------- */
+#carbonads-container,
+#ui8ads-container {
+  position: fixed;
+  bottom: 40px;
+  right: 5%;
+  width: 180px;
+  display: none;
+  z-index: 100;
+}
+
+#carbonads-container .close-carbon-adv,
+#carbonads-container .close-ui8-adv,
+#ui8ads-container .close-carbon-adv,
+#ui8ads-container .close-ui8-adv {
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  right: 100%;
+  background: rgba(68, 52, 83, 0.8);
+  text-indent: 100%;
+  overflow: hidden;
+  width: 32px;
+  height: 32px;
+}
+
+#carbonads-container .close-carbon-adv:hover,
+#carbonads-container .close-ui8-adv:hover,
+#ui8ads-container .close-carbon-adv:hover,
+#ui8ads-container .close-ui8-adv:hover {
+  background: #443453;
+}
+
+#carbonads-container .close-carbon-adv::after, #carbonads-container .close-carbon-adv::before,
+#carbonads-container .close-ui8-adv::after,
+#carbonads-container .close-ui8-adv::before,
+#ui8ads-container .close-carbon-adv::after,
+#ui8ads-container .close-carbon-adv::before,
+#ui8ads-container .close-ui8-adv::after,
+#ui8ads-container .close-ui8-adv::before {
+  content: '';
+  background-color: #fff;
+  height: 2px;
+  width: 14px;
+  position: absolute;
+  top: 14px;
+  left: 9px;
+}
+
+#carbonads-container .close-carbon-adv::after,
+#carbonads-container .close-ui8-adv::after,
+#ui8ads-container .close-carbon-adv::after,
+#ui8ads-container .close-ui8-adv::after {
+  transform: rotate(45deg);
+}
+
+#carbonads-container .close-carbon-adv::before,
+#carbonads-container .close-ui8-adv::before,
+#ui8ads-container .close-carbon-adv::before,
+#ui8ads-container .close-ui8-adv::before {
+  transform: rotate(-45deg);
+}
+
+#carbonads-container .carbonad,
+#carbonads-container .ui8ad,
+#ui8ads-container .carbonad,
+#ui8ads-container .ui8ad {
+  background: rgba(255, 255, 255, 0.9);
+  border: none;
+  width: 100%;
+  height: auto;
+  padding: 14px;
+  text-align: center;
+  border-radius: 0 3px 3px 3px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+#carbonads-container .carbonad .carbon-img img,
+#carbonads-container .ui8ad .carbon-img img,
+#ui8ads-container .carbonad .carbon-img img,
+#ui8ads-container .ui8ad .carbon-img img {
+  margin: 0 10px 10px;
+  width: 130px;
+}
+
+#carbonads-container .carbonad .carbon-text, #carbonads-container .carbonad .carbonad-tag,
+#carbonads-container .carbonad .carbon-poweredby,
+#carbonads-container .ui8ad .carbon-text,
+#carbonads-container .ui8ad .carbonad-tag,
+#carbonads-container .ui8ad .carbon-poweredby,
+#ui8ads-container .carbonad .carbon-text,
+#ui8ads-container .carbonad .carbonad-tag,
+#ui8ads-container .carbonad .carbon-poweredby,
+#ui8ads-container .ui8ad .carbon-text,
+#ui8ads-container .ui8ad .carbonad-tag,
+#ui8ads-container .ui8ad .carbon-poweredby {
+  font-family: 'Telenor',Arial, Helvetica, sans-serif;
+}
+
+#carbonads-container .carbonad .carbon-wrap,
+#carbonads-container .ui8ad .carbon-wrap,
+#ui8ads-container .carbonad .carbon-wrap,
+#ui8ads-container .ui8ad .carbon-wrap {
+  display: block;
+  width: 100%;
+  padding: 0;
+}
+
+#carbonads-container .carbonad .carbon-wrap a,
+#carbonads-container .ui8ad .carbon-wrap a,
+#ui8ads-container .carbonad .carbon-wrap a,
+#ui8ads-container .ui8ad .carbon-wrap a {
+  color: #443453;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+#carbonads-container .carbonad .carbon-wrap a:hover,
+#carbonads-container .ui8ad .carbon-wrap a:hover,
+#ui8ads-container .carbonad .carbon-wrap a:hover,
+#ui8ads-container .ui8ad .carbon-wrap a:hover {
+  text-decoration: underline;
+}
+
+#carbonads-container .carbonad .carbonad-tag,
+#carbonads-container .carbonad .carbon-poweredby,
+#carbonads-container .ui8ad .carbonad-tag,
+#carbonads-container .ui8ad .carbon-poweredby,
+#ui8ads-container .carbonad .carbonad-tag,
+#ui8ads-container .carbonad .carbon-poweredby,
+#ui8ads-container .ui8ad .carbonad-tag,
+#ui8ads-container .ui8ad .carbon-poweredby {
+  margin-top: 5px;
+  color: #222222;
+}
+
+#carbonads-container .carbonad .carbonad-tag a,
+#carbonads-container .carbonad .carbon-poweredby a,
+#carbonads-container .ui8ad .carbonad-tag a,
+#carbonads-container .ui8ad .carbon-poweredby a,
+#ui8ads-container .carbonad .carbonad-tag a,
+#ui8ads-container .carbonad .carbon-poweredby a,
+#ui8ads-container .ui8ad .carbonad-tag a,
+#ui8ads-container .ui8ad .carbon-poweredby a {
+  color: #A2B9B2;
+}
+
+#carbonads-container .carbonad .carbonad-tag a:hover,
+#carbonads-container .carbonad .carbon-poweredby a:hover,
+#carbonads-container .ui8ad .carbonad-tag a:hover,
+#carbonads-container .ui8ad .carbon-poweredby a:hover,
+#ui8ads-container .carbonad .carbonad-tag a:hover,
+#ui8ads-container .carbonad .carbon-poweredby a:hover,
+#ui8ads-container .ui8ad .carbonad-tag a:hover,
+#ui8ads-container .ui8ad .carbon-poweredby a:hover {
+  color: #A2B9B2;
+}
+
+#carbonads-container .carbonad .carbon-poweredby,
+#carbonads-container .ui8ad .carbon-poweredby,
+#ui8ads-container .carbonad .carbon-poweredby,
+#ui8ads-container .ui8ad .carbon-poweredby {
+  display: inline-block;
+  font-size: 11px;
+  line-height: 15px;
+}
+
+@media only screen and (min-width: 1000px) {
+  #carbonads-container,
+  #ui8ads-container {
+    display: block;
+  }
+}
+                    
+                </style>
+                
+
+<div class="cd-schedule loading">
+        <div class="timeline">
+            <ul>
+              <li><span>08:00</span></li>
+                <li><span>08:30</span></li>
+                <li><span>09:00</span></li>
+                <li><span>09:30</span></li>
+                <li><span>10:00</span></li>
+                <li><span>10:30</span></li>
+                <li><span>11:00</span></li>
+                <li><span>11:30</span></li>
+                <li><span>12:00</span></li>
+                <li><span>12:30</span></li>
+                <li><span>13:00</span></li>
+                <li><span>13:30</span></li>
+                <li><span>14:00</span></li>
+                <li><span>14:30</span></li>
+                <li><span>15:00</span></li>
+                <li><span>15:30</span></li>
+                <li><span>16:00</span></li>
+            </ul>
+        </div> <!-- .timeline -->
+    
+        <div class="events">
+            <ul>
+                <li class="events-group">
+                  <div class="top-info"><span>January</span><span>February</span><span>March</span></div>
+                    <div class="top-info"><span>Week 1</span></div>
+    
+                    <ul>
+  
+                      <li class="single-event" data-start="08:00" data-end="16:00" data-content="event-restorative-yoga" data-event="event-1">
+                          <a href="#0">
+                              <em class="event-name">Petar Simić PSIM</em>
+                          </a>
+                      </li>
+  
+                      <li class="single-event" data-start="15:00" data-end="16:00" data-content="event-abs-circuit" data-event="event-3">
+                          <a href="#0">
+                              <em class="event-name">Kristina Pejanović KPEJ - Reporting</em>
+                          </a>
+                      </li>
+  
+                  </ul>
+                </li>
+    
+                <li class="events-group">
+                  <div class="top-info"><span>April</span><span>May</span></div>
+                    <div class="top-info"><span>Week 2</span></div>
+    
+                    <ul>
+  
+                      <li class="single-event" data-start="08:00" data-end="16:00" data-content="event-restorative-yoga" data-event="event-3">
+                          <a href="#0">
+                              <em class="event-name">Kristina Pejanović KPEJ</em>
+                          </a>
+                      </li>
+  
+                      <li class="single-event" data-start="15:00" data-end="16:00" data-content="event-abs-circuit" data-event="event-1">
+                          <a href="#0">
+                              <em class="event-name">Petar Simić PSIM - Reporting</em>
+                          </a>
+                      </li>
+  
+                  </ul>
+                </li>
+    
+                <li class="events-group">
+                  <div class="top-info"><span>Jun</span><span>July</span><span>August</span></div>
+                    <div class="top-info"><span>Week 3</span></div>
+    
+                    <ul>
+  
+                      <li class="single-event" data-start="08:00" data-end="16:00" data-content="event-restorative-yoga" data-event="event-2">
+                          <a href="#0">
+                              <em class="event-name">Jovana Nikolić JONV</em>
+                          </a>
+                      </li>
+  
+                      <li class="single-event" data-start="15:00" data-end="16:00" data-content="event-abs-circuit" data-event="event-4">
+                          <a href="#0">
+                              <em class="event-name">Rene Hiler REHIL - Reporting</em>
+                          </a>
+                      </li>
+  
+                  </ul>
+                </li>
+    
+                <li class="events-group">
+                    <div class="top-info"><span>September</span><span>October</span></div>
+                    <div class="top-info"><span>Week 4</span></div>
+    
+                    <ul>
+    
+                        <li class="single-event" data-start="08:00" data-end="16:00" data-content="event-restorative-yoga" data-event="event-1">
+                            <a href="#0">
+                                <em class="event-name">Petar Simić PSIM</em>
+                            </a>
+                        </li>
+    
+                        <li class="single-event" data-start="15:00" data-end="16:00" data-content="event-abs-circuit" data-event="event-3">
+                            <a href="#0">
+                                <em class="event-name">Kristina Pejanović KPEJ - Reporting</em>
+                            </a>
+                        </li>
+    
+                    </ul>
+                </li>
+                <li class="events-group">
+                    <div class="top-info"><span>November</span><span>December</span><span>2018</span></div>
+                  <div class="top-info"><span>Week 5</span></div>
+  
+                  <ul>
+  
+                      <li class="single-event" data-start="08:00" data-end="16:00" data-content="event-restorative-yoga" data-event="event-3">
+                          <a href="#0">
+                              <em class="event-name">Kristina Pejanović KPEJ</em>
+                          </a>
+                      </li>
+  
+                      <li class="single-event" data-start="15:00" data-end="16:00" data-content="event-abs-circuit" data-event="event-1">
+                          <a href="#0">
+                              <em class="event-name">Petar Simić PSIM - Reporting</em>
+                          </a>
+                      </li>
+  
+                  </ul>
+              </li>
+            </ul>
+        </div>
+    
+        <div class="event-modal">
+            <header class="header">
+                <div class="content">
+                    <span class="event-date"></span>
+                    <h3 class="event-name"></h3>
+                </div>
+    
+                <div class="header-bg"></div>
+            </header>
+    
+            <div class="body">
+                <div class="event-info">
+                        <div class="hedding" style="width:100%;">
+                                <h3>
+                                    <br>
+                                    Collegue assigned to work with dispatching tickets from Remedy to relevant group or people.
+                                    <br>
+                                    <br>
+                                    Collegue assigned to do reporting of Escalation tickets and Vendor tickets report.
+                                    <br>
+                                </h3>
+                        </div>
+                    
+                </div>
+                <div class="body-bg">
+                    
+
+                </div>
+            </div>
+    
+            <a href="#0" class="close">Close</a>
+        </div>
+    
+        <div class="cover-layer"></div>
+    </div> <!-- .cd-schedule -->
+
+    
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
+    <script>
+        jQuery(document).ready(function($){
+	var transitionEnd = 'webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend';
+	var transitionsSupported = ( $('.csstransitions').length > 0 );
+	//if browser does not support transitions - use a different event to trigger them
+	if( !transitionsSupported ) transitionEnd = 'noTransition';
+	
+	//should add a loding while the events are organized 
+
+	function SchedulePlan( element ) {
+		this.element = element;
+		this.timeline = this.element.find('.timeline');
+		this.timelineItems = this.timeline.find('li');
+		this.timelineItemsNumber = this.timelineItems.length;
+		this.timelineStart = getScheduleTimestamp(this.timelineItems.eq(0).text());
+		//need to store delta (in our case half hour) timestamp
+		this.timelineSlotDuration = getScheduleTimestamp(this.timelineItems.eq(1).text()) - getScheduleTimestamp(this.timelineItems.eq(0).text());
+
+		this.eventsWrapper = this.element.find('.events');
+		this.events = this.eventsWrapper.find('.events-group');
+		this.singleEvents = this.events.find('.single-event');
+		this.eventSlotHeight = this.events.eq(0).children('.top-info').outerHeight();
+
+		this.modal = this.element.find('.event-modal');
+		this.modalHeader = this.modal.find('.header');
+		this.modalHeaderBg = this.modal.find('.header-bg');
+		this.modalBody = this.modal.find('.body'); 
+		this.modalBodyBg = this.modal.find('.body-bg'); 
+		this.modalMaxWidth = 800;
+		this.modalMaxHeight = 480;
+
+		this.animating = false;
+
+		this.initSchedule();
+	}
+
+	SchedulePlan.prototype.initSchedule = function() {
+		this.scheduleReset();
+		this.initEvents();
+	};
+
+	SchedulePlan.prototype.scheduleReset = function() {
+		var mq = this.mq();
+		if( mq == 'desktop' && !this.element.hasClass('js-full') ) {
+			//in this case you are on a desktop version (first load or resize from mobile)
+			this.eventSlotHeight = this.events.eq(0).children('.top-info').outerHeight();
+			this.element.addClass('js-full');
+			this.placeEvents();
+			this.element.hasClass('modal-is-open') && this.checkEventModal();
+		} else if(  mq == 'mobile' && this.element.hasClass('js-full') ) {
+			//in this case you are on a mobile version (first load or resize from desktop)
+			this.element.removeClass('js-full loading');
+			this.events.children('ul').add(this.singleEvents).removeAttr('style');
+			this.eventsWrapper.children('.grid-line').remove();
+			this.element.hasClass('modal-is-open') && this.checkEventModal();
+		} else if( mq == 'desktop' && this.element.hasClass('modal-is-open')){
+			//on a mobile version with modal open - need to resize/move modal window
+			this.checkEventModal('desktop');
+			this.element.removeClass('loading');
+		} else {
+			this.element.removeClass('loading');
+		}
+	};
+
+	SchedulePlan.prototype.initEvents = function() {
+		var self = this;
+
+		this.singleEvents.each(function(){
+			//create the .event-date element for each event
+			var durationLabel = '<span class="event-date">'+$(this).data('start')+' - '+$(this).data('end')+'</span>';
+			$(this).children('a').prepend($(durationLabel));
+
+			//detect click on the event and open the modal
+			$(this).on('click', 'a', function(event){
+				event.preventDefault();
+				if( !self.animating ) self.openModal($(this));
+			});
+		});
+
+		//close modal window
+		this.modal.on('click', '.close', function(event){
+			event.preventDefault();
+			if( !self.animating ) self.closeModal(self.events.find('.selected-event'));
+		});
+		this.element.on('click', '.cover-layer', function(event){
+			if( !self.animating && self.element.hasClass('modal-is-open') ) self.closeModal(self.events.find('.selected-event'));
+		});
+	};
+
+	SchedulePlan.prototype.placeEvents = function() {
+		var self = this;
+		this.singleEvents.each(function(){
+			//place each event in the grid -> need to set top position and height
+			var start = getScheduleTimestamp($(this).attr('data-start')),
+				duration = getScheduleTimestamp($(this).attr('data-end')) - start;
+
+			var eventTop = self.eventSlotHeight*(start - self.timelineStart)/self.timelineSlotDuration,
+				eventHeight = self.eventSlotHeight*duration/self.timelineSlotDuration;
+			
+			$(this).css({
+				top: (eventTop -1) +'px',
+				height: (eventHeight+1)+'px'
+			});
+		});
+
+		this.element.removeClass('loading');
+	};
+
+	SchedulePlan.prototype.openModal = function(event) {
+		var self = this;
+		var mq = self.mq();
+		this.animating = true;
+
+		//update event name and time
+		this.modalHeader.find('.event-name').text(event.find('.event-name').text());
+		this.modalHeader.find('.event-date').text(event.find('.event-date').text());
+		this.modal.attr('data-event', event.parent().attr('data-event'));
+
+		//update event content
+		this.modalBody.find('.event-info').load(event.parent().attr('data-content')+'.html .event-info > *', function(data){
+			//once the event content has been loaded
+			self.element.addClass('content-loaded');
+		});
+
+		this.element.addClass('modal-is-open');
+
+		setTimeout(function(){
+			//fixes a flash when an event is selected - desktop version only
+			event.parent('li').addClass('selected-event');
+		}, 10);
+
+		if( mq == 'mobile' ) {
+			self.modal.one(transitionEnd, function(){
+				self.modal.off(transitionEnd);
+				self.animating = false;
+			});
+		} else {
+			var eventTop = event.offset().top - $(window).scrollTop(),
+				eventLeft = event.offset().left,
+				eventHeight = event.innerHeight(),
+				eventWidth = event.innerWidth();
+
+			var windowWidth = $(window).width(),
+				windowHeight = $(window).height();
+
+			var modalWidth = ( windowWidth*.8 > self.modalMaxWidth ) ? self.modalMaxWidth : windowWidth*.8,
+				modalHeight = ( windowHeight*.8 > self.modalMaxHeight ) ? self.modalMaxHeight : windowHeight*.8;
+
+			var modalTranslateX = parseInt((windowWidth - modalWidth)/2 - eventLeft),
+				modalTranslateY = parseInt((windowHeight - modalHeight)/2 - eventTop);
+			
+			var DetailsBgScaleY = modalHeight/eventHeight,
+				MoreBgScaleX = (modalWidth - eventWidth);
+
+			//change modal height/width and translate it
+			self.modal.css({
+				top: eventTop+'px',
+				left: eventLeft+'px',
+				height: modalHeight+'px',
+				width: modalWidth+'px',
+			});
+			transformElement(self.modal, 'translateY('+modalTranslateY+'px) translateX('+modalTranslateX+'px)');
+
+			//set modalHeader width
+			self.modalHeader.css({
+				width: eventWidth+'px',
+			});
+			//set modalBody left margin
+			self.modalBody.css({
+				marginLeft: eventWidth+'px',
+			});
+
+			//change modalBodyBg height/width ans scale it
+			self.modalBodyBg.css({
+				height: eventHeight+'px',
+				width: '1px',
+			});
+			transformElement(self.modalBodyBg, 'scaleY('+DetailsBgScaleY+') scaleX('+MoreBgScaleX+')');
+
+			//change modal modalHeaderBg height/width and scale it
+			self.modalHeaderBg.css({
+				height: eventHeight+'px',
+				width: eventWidth+'px',
+			});
+			transformElement(self.modalHeaderBg, 'scaleY('+DetailsBgScaleY+')');
+			
+			self.modalHeaderBg.one(transitionEnd, function(){
+				//wait for the  end of the modalHeaderBg transformation and show the modal content
+				self.modalHeaderBg.off(transitionEnd);
+				self.animating = false;
+				self.element.addClass('animation-completed');
+			});
+		}
+
+		//if browser do not support transitions -> no need to wait for the end of it
+		if( !transitionsSupported ) self.modal.add(self.modalHeaderBg).trigger(transitionEnd);
+	};
+
+	SchedulePlan.prototype.closeModal = function(event) {
+		var self = this;
+		var mq = self.mq();
+
+		this.animating = true;
+
+		if( mq == 'mobile' ) {
+			this.element.removeClass('modal-is-open');
+			this.modal.one(transitionEnd, function(){
+				self.modal.off(transitionEnd);
+				self.animating = false;
+				self.element.removeClass('content-loaded');
+				event.removeClass('selected-event');
+			});
+		} else {
+			var eventTop = event.offset().top - $(window).scrollTop(),
+				eventLeft = event.offset().left,
+				eventHeight = event.innerHeight(),
+				eventWidth = event.innerWidth();
+
+			var modalTop = Number(self.modal.css('top').replace('px', '')),
+				modalLeft = Number(self.modal.css('left').replace('px', ''));
+
+			var modalTranslateX = eventLeft - modalLeft,
+				modalTranslateY = eventTop - modalTop;
+
+			self.element.removeClass('animation-completed modal-is-open');
+
+			//change modal width/height and translate it
+			this.modal.css({
+				width: eventWidth+'px',
+				height: eventHeight+'px'
+			});
+			transformElement(self.modal, 'translateX('+modalTranslateX+'px) translateY('+modalTranslateY+'px)');
+			
+			//scale down modalBodyBg element
+			transformElement(self.modalBodyBg, 'scaleX(0) scaleY(1)');
+			//scale down modalHeaderBg element
+			transformElement(self.modalHeaderBg, 'scaleY(1)');
+
+			this.modalHeaderBg.one(transitionEnd, function(){
+				//wait for the  end of the modalHeaderBg transformation and reset modal style
+				self.modalHeaderBg.off(transitionEnd);
+				self.modal.addClass('no-transition');
+				setTimeout(function(){
+					self.modal.add(self.modalHeader).add(self.modalBody).add(self.modalHeaderBg).add(self.modalBodyBg).attr('style', '');
+				}, 10);
+				setTimeout(function(){
+					self.modal.removeClass('no-transition');
+				}, 20);
+
+				self.animating = false;
+				self.element.removeClass('content-loaded');
+				event.removeClass('selected-event');
+			});
+		}
+
+		//browser do not support transitions -> no need to wait for the end of it
+		if( !transitionsSupported ) self.modal.add(self.modalHeaderBg).trigger(transitionEnd);
+	}
+
+	SchedulePlan.prototype.mq = function(){
+		//get MQ value ('desktop' or 'mobile') 
+		var self = this;
+		return window.getComputedStyle(this.element.get(0), '::before').getPropertyValue('content').replace(/["']/g, '');
+	};
+
+	SchedulePlan.prototype.checkEventModal = function(device) {
+		this.animating = true;
+		var self = this;
+		var mq = this.mq();
+
+		if( mq == 'mobile' ) {
+			//reset modal style on mobile
+			self.modal.add(self.modalHeader).add(self.modalHeaderBg).add(self.modalBody).add(self.modalBodyBg).attr('style', '');
+			self.modal.removeClass('no-transition');	
+			self.animating = false;	
+		} else if( mq == 'desktop' && self.element.hasClass('modal-is-open') ) {
+			self.modal.addClass('no-transition');
+			self.element.addClass('animation-completed');
+			var event = self.events.find('.selected-event');
+
+			var eventTop = event.offset().top - $(window).scrollTop(),
+				eventLeft = event.offset().left,
+				eventHeight = event.innerHeight(),
+				eventWidth = event.innerWidth();
+
+			var windowWidth = $(window).width(),
+				windowHeight = $(window).height();
+
+			var modalWidth = ( windowWidth*.8 > self.modalMaxWidth ) ? self.modalMaxWidth : windowWidth*.8,
+				modalHeight = ( windowHeight*.8 > self.modalMaxHeight ) ? self.modalMaxHeight : windowHeight*.8;
+
+			var DetailsBgScaleY = modalHeight/eventHeight,
+				MoreBgScaleX = (modalWidth - eventWidth);
+
+			setTimeout(function(){
+				self.modal.css({
+					width: modalWidth+'px',
+					height: modalHeight+'px',
+					top: (windowHeight/2 - modalHeight/2)+'px',
+					left: (windowWidth/2 - modalWidth/2)+'px',
+				});
+				transformElement(self.modal, 'translateY(0) translateX(0)');
+				//change modal modalBodyBg height/width
+				self.modalBodyBg.css({
+					height: modalHeight+'px',
+					width: '1px',
+				});
+				transformElement(self.modalBodyBg, 'scaleX('+MoreBgScaleX+')');
+				//set modalHeader width
+				self.modalHeader.css({
+					width: eventWidth+'px',
+				});
+				//set modalBody left margin
+				self.modalBody.css({
+					marginLeft: eventWidth+'px',
+				});
+				//change modal modalHeaderBg height/width and scale it
+				self.modalHeaderBg.css({
+					height: eventHeight+'px',
+					width: eventWidth+'px',
+				});
+				transformElement(self.modalHeaderBg, 'scaleY('+DetailsBgScaleY+')');
+			}, 10);
+
+			setTimeout(function(){
+				self.modal.removeClass('no-transition');
+				self.animating = false;	
+			}, 20);
+		}
+	};
+
+	var schedules = $('.cd-schedule');
+	var objSchedulesPlan = [],
+		windowResize = false;
+	
+	if( schedules.length > 0 ) {
+		schedules.each(function(){
+			//create SchedulePlan objects
+			objSchedulesPlan.push(new SchedulePlan($(this)));
+		});
+	}
+
+	$(window).on('resize', function(){
+		if( !windowResize ) {
+			windowResize = true;
+			(!window.requestAnimationFrame) ? setTimeout(checkResize) : window.requestAnimationFrame(checkResize);
+		}
+	});
+
+	$(window).keyup(function(event) {
+		if (event.keyCode == 27) {
+			objSchedulesPlan.forEach(function(element){
+				element.closeModal(element.events.find('.selected-event'));
+			});
+		}
+	});
+
+	function checkResize(){
+		objSchedulesPlan.forEach(function(element){
+			element.scheduleReset();
+		});
+		windowResize = false;
+	}
+
+	function getScheduleTimestamp(time) {
+		//accepts hh:mm format - convert hh:mm to timestamp
+		time = time.replace(/ /g,'');
+		var timeArray = time.split(':');
+		var timeStamp = parseInt(timeArray[0])*60 + parseInt(timeArray[1]);
+		return timeStamp;
+	}
+
+	function transformElement(element, value) {
+		element.css({
+		    '-moz-transform': value,
+		    '-webkit-transform': value,
+			'-ms-transform': value,
+			'-o-transform': value,
+			'transform': value
+		});
+	}
+});
+    </script>
+    <h2 style="padding:2%;text-align:center;">Mobile Network Team is responsible for handling tickets related to the Mobile CRM Network</h2>
+    </div>
+
+    <div class="hedding" align="left" style="float:left;width:50%;border:2px solid #13C6FF;line-height:150%;height: 550px;background: #000;
+    background: -moz-linear-gradient(-45deg, #000000 0%, #000000 25%, #1e539e 50%, #ff3083 75%, #7800a8 100%);
+    background: -webkit-linear-gradient(-45deg, #000000 0%, #000000 25%, #1e539e 50%, #ff3083 75%, #7800a8 100%);
+    background: linear-gradient(135deg, #000000 0%, #000000 25%, #1e539e 50%, #ff3083 75%, #7800a8 100%);">
+      <h2>Team Members:</h2>
+      <h3><br>
+          JONV
+          <br>
+          KPEJ
+          <br>
+          PSIM
+          <br>
+      </h3>
+      <br>
+      <h2>Daily Tasks and Responsibilities:</h2>
+      <h3><br>
+          Ticket Administration
+          <br>
+          Remedy Group Administration
+          <br>
+          Avaya Support
+          <br>
+      </h3>
+      <br>
+      <h2>Applicible tools:</h2>
+      <h3><br>
+          VDI
+          <br>
+          Remedy
+          <br>
+          Veris
+          <br>
+          NetSupport
+          <br>
+          OCH
+          <br>
+
+      
+      </h3>
+  
+ 
+      
+  </div>
+  <div class="hedding" align="left" style="float:left;width:50%;border:2px solid #13C6FF;line-height:150%;height: 550px;background: #000;
+  background: -moz-linear-gradient(-45deg, #000000 0%, #000000 25%, #1e539e 50%, #ff3083 75%, #7800a8 100%);
+  background: -webkit-linear-gradient(-45deg, #000000 0%, #000000 25%, #1e539e 50%, #ff3083 75%, #7800a8 100%);
+  background: linear-gradient(135deg, #000000 0%, #000000 25%, #1e539e 50%, #ff3083 75%, #7800a8 100%);">
+      <h2>Ticket Administration:</h2>
+      <h3><br>
+          <li>Reading and understanding (if possible) the reported issue in the ticket.</li>
+          <br>
+          <li>Checking and categorizing the ticket.</li>
+          <br>
+          <li>Changing the status to "Assigned" if it is in status "New"; Ticket can be in the "Work in Progress" status if assigned from other Remedy groups.</li>
+          <br>
+          <li>Assigning the ticket to someone from the applicable group</li>
+          <br>
+      
+      </h3>
+      <br>
+      <h2>Remedy Group Administration:</h2>
+      <h3><br>
+          ​Administration of every Remedy group represents keeping the group clean of tickets ie. assigning them to other group members.
+          <br>
+      
+      </h3>
+      <br>
+      <h2>Knowledge Base:</h2>
+      <h3><br>
+          Utilizing and managing Knowledge Database
+          <br>
+      
+      </h3>
+    
+      
+  </div>
+
+    <div class="words" align="center" style="width:100%;">
+        <h3>All rights reserved by Application and Billing Support Team at TnCo® 2017</h3>
+    </div>
+
+
+    </body>
+</html>

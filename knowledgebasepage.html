@@ -1,0 +1,1235 @@
+<!DOCTYPE html>
+<html lang="en" >
+<WebPartPages:AllowFraming runat="server"/>
+<head>
+  <meta charset="UTF-8">
+  <title>Business Application Knowledge Base</title>
+  <link href="telenor.ttf" rel="stylesheet">
+  <link rel="icon" href="icon.png">
+  
+  
+  
+  <style>
+
+
+@import url("https://fonts.googleapis.com/css?family=Cinzel Decorative");
+body {
+    background: url(frontback.jpg) lightgray;
+	min-width: 1800px;
+	font-size: 1em; /* Sets base font size to 16px */
+}
+
+html { font-size: 100%; /* IE hack */ }
+
+table { font-size: 100%; /* IE hack */ }
+
+.thumbnail {
+    width: 75px;
+    height: 100px;
+	margin-left: 40px;
+}
+
+#hovermsg {
+	color: red;
+	text-align: center;
+}
+header {
+	
+	font-family: 'Telenor',Helvetica;
+	font-weight: bold;
+	font-style:italic;
+	background-color: white;
+	border-bottom: 3px solid #13C6FF;
+	border-left: 1px solid #13C6FF;
+	border-top: 1px solid #13C6FF;
+	box-shadow: 5px 5px 5px #13C6FF;
+	border-radius: 5px;
+    color: black;
+    clear: left;
+	margin: 10px 10px 5px 10px;
+	padding: 8px 8px -15px 8px;
+	height: 125px;
+	
+}
+
+header p
+{
+	font-size: 1.5em;
+	font-family: 'Telenor',sans-serif;
+	letter-spacing: 1.5px;
+	text-align: right;
+	position: relative;
+	bottom: 50px;
+	right: 200px;
+	min-width: 1200px;
+	
+}
+
+header img
+{
+	margin-left: 20px;
+	position: relative;
+	top: 25px;
+	
+}
+
+
+#home
+{
+	
+	background-color: white;
+    border: 2px solid #13C6FF;
+    padding: 3px 20px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    margin: 20px 10px -25px;
+    cursor: pointer;
+	float: left;
+	border-radius: 5px;
+	box-shadow: 3px 3px 5px #13C6FF;
+
+}
+
+
+
+
+
+
+/***************************************************************************************************************** Nav Dropdown for important links
+*/
+
+
+/* Dropdown Button */
+.dropbtn {
+	background-color: white;
+ 
+    padding: 5px;
+	
+	border: none;
+	background: none;
+    text-align: center;
+    
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+	float: left;
+	
+	
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+	border-radius: 5px;
+	background-color: white;
+    border: 2px solid #13C6FF;
+    padding: 3px 20px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    margin: 20px 10px -25px 25px;
+    cursor: pointer;
+	float: left;
+	border-radius: 5px;
+	box-shadow: 3px 3px 5px #13C6FF;
+	
+	
+	
+	
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color:lightgray;
+    min-width: 250px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+	border: 3px solid white;
+	border-radius: 5px;
+	box-shadow: 3px 3px 5px #13C6FF;
+	
+	margin-left: -70px;
+	margin-top: 25px;
+
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    background-color: white;
+	color: black;
+	font-family: 'Telenor',arial;
+	font-size: .9em;
+	text-outline: 2px 2px black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+	
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+	background-color: lightgray;
+	color: black;
+	font-weight: bold;
+	border: 2px solid black;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+	border-radius: 5px;
+	box-shadow: 3px 3px 5px #13C6FF;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+    background-color:lightgray;
+	border-radius: 5px;
+	
+}
+
+
+
+/*********************************************************************************************************************/
+
+
+
+
+
+
+
+
+
+
+
+#email
+{
+	
+	background-color: white;
+    border: 2px solid #13C6FF;
+    padding: 3px 20px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    margin: 20px 20px -25px;
+    cursor: pointer;
+	float: left;
+	border-radius: 5px;
+	box-shadow: 3px 3px 5px #13C6FF;
+}
+
+
+#home a, #email a
+{
+	text-decoration: none;
+	color: #13C6FF;
+	font-weight: bolder;
+	border: none;
+	
+}
+
+#home img, #email img
+{
+	padding: 1.5px;
+	
+
+}
+
+#home:hover, #email:hover
+{
+	background-color:lightgray;
+	border: 2px solid white;
+}
+
+.dropdown:hover{
+	background-color:lightgray;
+	border: 2px solid white;
+}
+
+
+
+
+
+/*************************************************************************************************************************************************** Tooltips*/
+
+/* Tooltip container */
+.tooltip {
+    position: relative;
+    display: inline-block;
+    
+}
+
+/* Tooltip text */
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 100px;
+    background-color: black;
+	font-family: 'Telenor',arial;
+	font-size: 12px;
+    color: #fff;
+    text-align: center;
+    padding: 15px;
+    border-radius: 50%;
+  
+  
+    border-bottom-left-radius: 0%;  /*make point for tooltip "bubble*/
+ 
+    /* Position the tooltip text - see examples below! */
+    position: absolute;
+    z-index: 1;
+    top: -40px;
+    left: 75%;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+
+/*************************
+Right section
+**********************/
+html { font-size: 100%; /* IE hack */ }
+body { font-size: 1em; /* Sets base font size to 16px */ }
+table { font-size: 100%; /* IE hack */ }
+
+
+
+.rightside {
+	padding: 1em;
+	font-family: 'Telenor',Helvetica;
+	font-weight: bold;
+	font-style:italic;
+	background-color: white;
+	margin-right: 9px;
+	/* margin-top: -315px;
+	margin-bottom: 40px;
+	margin-left: 420px; */
+  color: black;
+  float: right;
+	width: 65%;
+	min-height: 700px;
+	border-bottom: 3px solid #13C6FF;
+	box-shadow: 5px 5px 5px #13C6FF;
+	border-right: 3px solid #13C6FF;
+	border-top: 1px solid #13C6FF;
+	border-left: 1px solid #13C6FF;
+	border-radius: 5px;
+	
+}
+.bottombar {
+    font-family: 'Telenor',Helvetica;
+    font-size: 20px;
+	background-color: black;
+	height: 100px;
+}
+
+right-side title bar 
+ 
+.rs_tb {
+	border-bottom: 2px dashed lightblue;
+	text-align: center;
+	padding: 0px;
+	margin: 0px; 
+	
+}
+
+
+html { font-size: 100%; /* IE hack */ }
+body { font-size: 1em; /* Sets base font size to 16px */ }
+table { font-size: 100%; /* IE hack */ }
+input, select, textarea, th, td { font-size: 1em; }
+
+
+
+/* CSS Tree menu styles */
+ol.tree
+{
+	padding: 0 0 0 30px;
+	width: 300px;
+}
+	li 
+	{ 
+		position: relative; 
+		margin-left: -15px;
+		list-style: none;
+	}
+	li.file
+	{
+		margin-left: -1px !important;
+	}
+li.file a
+{
+	text-transform: capitalize;
+	/*background: url(document.png) 0 0 no-repeat;*/
+	font-size: .75em;
+	color: black;
+	padding-left: 21px;
+	padding-top: 3px;
+	text-decoration: none;
+	display: block;
+}
+
+/*Icons for the various file types*/
+		li.file a[href *= '.com']	{ background: url("https://drive.google.com/uc?export=view&id=0B8J79RkwBgvmbDMzelhXdHh3Sms") 0 0 no-repeat; }
+		li.file a[href *= '.pdf']	{ background: url("https://drive.google.com/uc?export=view&id=0B8J79RkwBgvmbDMzelhXdHh3Sms") 0 0 no-repeat; }
+		li.file a[href $= '.css']	{ background: url(document.png) 0 0 no-repeat; }
+		li.file a[href $= '.js']		{ background: url(document.png) 0 0 no-repeat; }
+li input
+{
+	position: absolute;
+	left: 0;
+	margin-left: 0;
+	opacity: 0;
+	z-index: 2;
+	cursor: pointer;
+	height: 1em;
+	width: 1em;
+	top: 0;
+}
+
+li input + ol
+{
+	background: url("https://drive.google.com/uc?export=view&id=0B8J79RkwBgvmMkJ3LXJaeDdtN1k") 40px 0 no-repeat;
+	margin: -0.938em 0 0 -44px; /* 15px */
+	height: 1.1em;
+}
+
+li input + ol > li
+{
+	display: none; 
+	margin-left: -14px !important; 
+	padding-left: 1px; 
+}
+
+li label
+{
+	background: url("https://drive.google.com/uc?export=view&id=0B8J79RkwBgvmSnlYV2dBMDgzRUk") 15px 1px no-repeat;
+	cursor: pointer;
+	display: block;
+	padding-left: 37px;
+	padding-top: -200px;
+	padding-bottom: -10px;
+	margin-bottom: -20px;
+}
+
+	li input:checked + ol
+{
+	background: url("https://drive.google.com/uc?export=view&id=0B8J79RkwBgvmVzFPRlpLWGZsX3M") 40px 0px no-repeat;
+	margin: -1.25em 0 0 -44px; /* 20px */
+	padding: 1.563em 0 0 80px;
+	height: auto;
+
+}
+
+li input:checked + ol > li { display: block; margin: 0 0 0.125em;  /* 2px */}
+
+
+
+li input:checked + ol > li label
+{
+	display: block; margin-bottom: -20px;
+}
+
+li input:checked + ol > li:last-child { margin: 0 0 0.063em; /* 1px */ }
+
+
+
+
+/* Color text of folder name upon mouse hover */
+li label:hover
+{
+	
+	color: #0B50A4;
+	
+}
+
+
+
+
+
+/*********************************************************************************************************************/
+
+
+/* left side bar (Top left) Knowledge Base*/
+
+lsb 
+{
+	border: 1px solid #13C6FF;
+
+	float: left;
+	width: 375px;
+	font-family: 'Telenor',arial;
+	font-size: 1.1em;
+	font-weight: bold;
+	margin-top: 60px;
+	margin-left: 10px;
+	background-color: white;
+	border-bottom: 3px solid #13C6FF;
+	border-radius: 5px;
+    color: black;
+    clear: left;
+	box-shadow: 5px 5px 5px #13C6FF;
+}
+lsb.tit { 
+    float: left;
+	border-bottom: 1px solid #13C6FF;
+	width: 375px;
+	background-color: #13C6FF;
+	border-bottom: none;
+	color: #ffffff !important;
+	font-family: 'Telenor',arial;
+	top: -.5em;
+	margin-top: 0px;
+	overflow: hidden;
+	position: relative;
+	text-align: center;
+	border-radius: 5px 5px 0px 0px;
+	left: -11px;
+	box-shadow: 5px 0px 5px #13C6FF;
+}
+ul {
+padding: 0px;
+}
+li {
+
+margin-right: 20px;
+margin-left: -30px;
+padding-left: 5px;
+padding-top: 5px;
+padding-bottom: 0px;
+
+}
+
+
+
+/*************************************************************************************************************/
+
+
+
+/*Left side bar 2 (lower left)*/
+/*Guides and Job Aids*/
+
+
+lsb2 
+{
+	border: 1px solid #13C6FF;
+
+	float: left;
+	width: 375px;
+	font-family: 'Telenor',arial;
+	font-size: 1.1em;
+	font-weight: bold;
+	margin-top: 60px;
+	margin-left: 10px;
+	background-color: white;
+	border-bottom: 3px solid #13C6FF;
+	border-radius: 5px;
+    color: black;
+    clear: left;
+	box-shadow: 5px 5px 5px #13C6FF;
+}
+lsb2.tit { 
+	float: left;
+	border-bottom: 1px solid #13C6FF;
+	width: 375px;
+	background-color: #13C6FF;
+	border-bottom: none;
+	color: #ffffff !important;
+	font-family: 'Telenor',arial;
+	top: -.5em;
+	margin-top: 0px;
+	overflow: hidden;
+	position: relative;
+	text-align: center;
+	border-radius: 5px 5px 0px 0px;
+	left: -11px;
+	box-shadow: 5px 0px 5px #13C6FF;
+}
+ul {
+padding: 0px;
+}
+li {
+
+margin-right: 20px;
+margin-left: -30px;
+padding-left: 5px;
+padding-top: 5px;
+padding-bottom: 0px;
+
+}
+
+.file a:hover
+{
+		
+	color: #0B50A4;
+}
+
+
+
+.folder:hover
+{
+	text-decoration:underline;
+}
+
+
+
+/*************************************************************************************************************/
+
+
+
+/*Left side bar 3 (lower lower left)*/
+/*Search iFrame*/
+
+lsb3 
+{
+	border: 1px solid #13C6FF;
+
+	float: left;
+	width: 375px;
+	font-family: 'Telenor',arial;
+	font-size: 1.1em;
+	font-weight: bold;
+	margin-top: 60px;
+	margin-left: 10px;
+	background-color: white;
+	border-bottom: 3px solid #13C6FF;
+	border-radius: 5px;
+    color: black;
+    clear: left;
+	box-shadow: 5px 5px 5px #13C6FF;
+}
+ul {
+padding: 0px;
+}
+li {
+
+margin-right: 20px;
+margin-left: -30px;
+padding-left: 5px;
+padding-top: 5px;
+padding-bottom: 0px;
+
+}
+
+.file a:hover
+{
+		
+	color: #0B50A4;
+}
+
+
+
+.folder:hover
+{
+	text-decoration:underline;
+}
+
+
+
+
+
+
+#search {
+    width: 100%;
+    padding: 1px 1px;
+    margin: 1px 0;
+    box-sizing: border-box;
+    display: inline-block;
+}
+
+form {
+    width: 370px;
+        height: auto;
+    margin: 3px;
+    }
+    
+lsb3 form #search
+{
+	width: 77%;
+	
+}
+        
+      </style>
+
+  
+</head>
+
+<body>
+
+  <meta charset="utf-8">
+
+
+
+<title>Business Application Knowledge Base</title>
+<!--Browser tab title-->
+
+
+<link href="https://drive.google.com/uc?export=view&id=0B8J79RkwBgvmWkxVRXFQY1IyRGs" rel="shortcut icon" type="image/x-icon" target="_blank">
+<!--Browser tab icon for site-->
+
+
+</head>
+
+
+<body>
+
+  <header>
+    <a href="index.html"><img src="tncologo.jpg" style="width:20%;height:50%;"></a>
+    <!--Tnco Service Desk Logo -->
+    <p class="" style="font-family:'Telenor',arial;">Powering our customers' potential, every day.</p>
+
+
+  </header>
+
+  <div id="navbar">
+
+    <div class="tooltip">
+      <a id="home" href="knowledgebasepage.html">
+        <!-- Refresh Page tool tip-->
+
+        <img id="homeimg" src="home.png" ) />
+
+      </a>
+
+      <span class="tooltiptext">Refresh This Page</span>
+    </div>
+
+
+    <div class="tooltip">
+      <div class="dropdown">
+        
+        <button class="dropbtn">Useful Links</button>
+        <div class="dropdown-content">
+          <a href="http://shredder/Monitor/Remedy/cpamart/?taskgrp=&grp=SD+Applications%2FBilling+Fixed&bugbase=&kpiuser=SD+Applications%2FBilling+Fixed&ini=" target="_blank">Shreder</a>
+          <a href="http://112.25.233.117:58080/OnlineServer/LoginAction.action?-3820747723360883982" target="_blank">DMP</a>
+          <a href="https://sso.veris.telenor.eu/?clientName=CRM&referer=https%3A%2F%2Fbss.veris.telenor.eu%2Fcrm%2Findex_sso.jsp" target="_blank">Veris</a>
+          <a href="https://oi.tdc.dk/Login/wso?redirectUrl=https%3a%2f%2fwholesale.tdc.dk%2fselvbetjening%3ficid%3d_wholesale_tdc_dk_wholesaleonline_Sider_default.aspx" target="_blank">TDC Wholesale</a>
+          <a href="https://verisdmp.support/OnlineServer/LoginAction.action" target="_blank">AISD</a>
+          <a href="https://online.och.dk/index.jsp#welcome" target="_blank">OCH</a>
+          <a href="http://netsupport/netsupport/search.seam?conversationPropagation=end&cid=10010" target="_blank">NetSupport</a>
+          <a href="https://www.google.com/" target="_blank">Citrix BSS Portal</a>
+          <a href="https://www.google.com/" target="_blank">SFF</a>
+          <a href="https://team.wow2.telenor.com/sites/dk_ChannelPortal/Fejl/SitePages/Home.aspx" target="_blank">Channel Portal Fejl</a>
+          <a href="http://7-9-13/default.aspx" target="_blank">7-9-13</a>
+          <a href="https://billing.veris.telenor.eu/upc/?" target="_blank">UPC</a>
+          <a href="https://internal-ose-epi.prod.telenor.eu/agent-view" target="_blank">OneScreen</a>
+
+
+        </div>
+      </div>
+      <span class="tooltiptext">Business Application Apps</span>
+    </div>
+
+
+    <div class="tooltip">
+
+      <a id="email" href="mailto:TnCO.ServiceDesk.ApplicationSupport@telenor.rs?Subject=Question/Comment to Business Application Team" target="_top"><img src="envelope.png"/></a>
+      <!-- Email link-->
+
+
+      <span class="tooltiptext">Email the Service Desk</span>
+    </div>
+
+
+  </div>
+
+
+  
+
+
+  <lsb3>
+
+
+<form>
+
+  <input type="text" id="search" name="search" placeholder="Search Knowledge Base" onkeyup="filterFunction">
+    <input onclick="myFunction()" type="button" id="searchBtn" alt="Search" value="Search">
+</form>
+
+<script>
+        /* When the user clicks on the button,
+        toggle between hiding and showing the dropdown content */
+        function myFunction() {
+            document.getElementById("kbsearch").classList.toggle("kbsearch");
+        }
+        
+        function filterFunction() {
+            var input, filter, ul, li, a, i;
+            input = document.getElementById("search");
+            filter = input.value.toUpperCase();
+            div = document.getElementById("kbsearch");
+            a = div.getElementsByTagName("a");
+            for (i = 0; i < a.length; i++) {
+                if (a[i].innerHTML.toUpperCase().indexOf(filter) > -1) {
+                    a[i].style.display = "";
+                } else {
+                    a[i].style.display = "none";
+                }
+            }
+        }
+</script>
+
+
+
+  </lsb3>
+
+
+  <div class="rightside">
+
+    <!-- iframe to load PDF documents -->
+    <iframe name="kbtable" src="tncologoKB.png" width="100%" height="700px" frameborder="0"></iframe>
+
+    <!-- Email link-->
+  </div>
+
+
+  <lsb id="kbsearch">
+    <lsb class="tit">
+      Knowledge Base
+    </lsb>
+
+
+    <ol>
+
+      
+      <li>
+        <label for="Order Managment">Order Managment</label>
+        <input type="checkbox" id="Order Managment" />
+        <ol>
+
+
+          <li class="file"><a href="https://team.wow2.telenor.com/sites/cs_TnCOServiceDesk/Knowledge%20Base%20v1/Application%20and%20Billing/Fixed/Fixed%20Instructions%20-%20TnCO%20Veris%20CRM%20-%20New%20Connection.aspx" target="kbtable">Order Management / New Connection</a></li>
+          <li class="file"><a href="https://team.wow2.telenor.com/sites/cs_TnCOServiceDesk/Knowledge%20Base%20v1/Application%20and%20Billing/Fixed/Fixed%20Instructions%20-%20TnCO%20Veris%20CRM%20-%20New%20Connection.aspx" target="kbtable">Batch Order check status</a></li>
+          <li class="file"><a href="https://team.wow2.telenor.com/sites/cs_TnCOServiceDesk/Knowledge%20Base%20v1/Application%20and%20Billing/Fixed/Fixed%20Instructions%20-%20TnCO%20Veris%20CRM%20-%20New%20Connection.aspx" target="kbtable">Unpaid Orders</a></li>
+          <li class="file"><a href="https://team.wow2.telenor.com/sites/cs_TnCOServiceDesk/Knowledge%20Base%20v1/Application%20and%20Billing/Fixed/Fixed%20Instructions%20-%20TnCO%20Veris%20CRM%20-%20New%20Connection.aspx" target="kbtable">Order stucked with only Office365 from SkyTeam</a></li>
+          <li class="file"><a href="https://team.wow2.telenor.com/sites/cs_TnCOServiceDesk/Knowledge%20Base%20v1/Application%20and%20Billing/Fixed/Fixed%20Instructions%20-%20TnCO%20Veris%20CRM%20-%20New%20Connection.aspx" target="kbtable">Checking Completed Orders</a></li>
+          <li class="file"><a href="https://team.wow2.telenor.com/sites/cs_TnCOServiceDesk/Knowledge%20Base%20v1/Application%20and%20Billing/Fixed/Fixed%20Instructions%20-%20TnCO%20Veris%20CRM%20-%20New%20Connection.aspx" target="kbtable">Order Managment / Termination</a></li>
+          <li class="file"><a href="https://team.wow2.telenor.com/sites/cs_TnCOServiceDesk/Knowledge%20Base%20v1/Application%20and%20Billing/Fixed/Fixed%20Instructions%20-%20TnCO%20Veris%20CRM%20-%20New%20Connection.aspx" target="kbtable">POA step in Order</a></li>
+          <li class="file"><a href="https://team.wow2.telenor.com/sites/cs_TnCOServiceDesk/Knowledge%20Base%20v1/Application%20and%20Billing/Fixed/Fixed%20Instructions%20-%20TnCO%20Veris%20CRM%20-%20New%20Connection.aspx" target="kbtable">Jump step - New Connection</a></li>
+          <li class="file"><a href="https://team.wow2.telenor.com/sites/cs_TnCOServiceDesk/Knowledge%20Base%20v1/Application%20and%20Billing/Fixed/Fixed%20Instructions%20-%20TnCO%20Veris%20CRM%20-%20New%20Connection.aspx" target="kbtable">Checking Orders for SAP</a></li>
+
+        </ol>
+      </li>
+
+
+      
+      <li>
+        <label for="Customer Managment">Customer Managment</label>
+        <input type="checkbox" id="Customer Managment" />
+        <ol>
+
+
+          <li class="file"><a href="https://drive.google.com/uc?export=view&id=0B8J79RkwBgvmNlgyYXpydjEtWTQ#zoom=170" target="kbtable">Prospect Customer</a></li>
+          <li class="file"><a href="https://team.wow2.telenor.com/sites/cs_TnCOServiceDesk/Knowledge%20Base%20v1/Application%20and%20Billing/Fixed/Fixed%20Instructions%20-%20TnCO%20Veris%20CRM%20-%20New%20Connection.aspx" target="kbtable">Assigning ViaPlay Voucher</a></li>
+
+        </ol>
+      </li>
+
+      <li>
+            <label for="Resource Managment">Resource Managment</label>
+            <input type="checkbox" id="Resource Managment" />
+            <ol>
+    
+    
+              <li class="file"><a href="https://team.wow2.telenor.com/sites/cs_TnCOServiceDesk/Knowledge%20Base%20v1/Application%20and%20Billing/Fixed/Fixed%20Instructions%20-%20How%20to%20check%20reserved%20number.aspx" target="kbtable">How to check reserved number in Veris</a></li>
+    
+            </ol>
+          </li>
+
+      
+      <li>
+        <label for="Mobile Support">Mobile Support</label>
+        <input type="checkbox" id="Mobile Support" />
+        <ol>
+
+
+          <li class="file"><a href="https://drive.google.com/uc?export=view&id=0B8J79RkwBgvmNlgyYXpydjEtWTQ#zoom=170" target="kbtable">Example</a></li>
+
+        </ol>
+      </li>
+      <li>
+            <label for="Fixed Support">Fixed Support</label>
+            <input type="checkbox" id="Fixed Support" />
+            <ol>
+    
+    
+              <li class="file"><a href="https://drive.google.com/uc?export=view&id=0B8J79RkwBgvmNlgyYXpydjEtWTQ#zoom=170" target="kbtable">Example</a></li>
+    
+            </ol>
+        </li>
+        <li>
+                <label for="Channel Support">Channel Support</label>
+                <input type="checkbox" id="Channel Support" />
+                <ol>
+        
+        
+                  <li class="file"><a href="https://team.wow2.telenor.com/sites/cs_TnCOServiceDesk/Knowledge%20Base%20v1/Application%20and%20Billing/Channels/WA%20for%20My%20Telenor%20Login(forgotten%20email).aspx" target="kbtable">WA My Telenor log in(forgotten email)</a></li>
+        
+                </ol>
+        </li>
+        <li>
+                <label for="SAP Support">SAP Support</label>
+                <input type="checkbox" id="SAP Support" />
+                <ol>
+        
+        
+                  <li class="file"><a href="https://drive.google.com/uc?export=view&id=0B8J79RkwBgvmNlgyYXpydjEtWTQ#zoom=170" target="kbtable">Example</a></li>
+        
+                </ol>
+        </li>
+        <li>
+                <label for="Wholesale Support">Wholesale Support</label>
+                <input type="checkbox" id="Wholesale Support" />
+                <ol>
+        
+        
+                  <li class="file"><a href="https://drive.google.com/uc?export=view&id=0B8J79RkwBgvmNlgyYXpydjEtWTQ#zoom=170" target="kbtable">Example</a></li>
+        
+                </ol>
+              </li>
+
+
+
+    </ol>
+
+  </lsb>
+
+
+  <lsb2>
+    <lsb2 class="tit">
+      Guides & How To's
+    </lsb2>
+
+
+    <ol>
+
+
+      
+
+      <li>
+        <label for="software">N/A</label>
+        <input type="checkbox" id="software" />
+        <ol>
+
+
+          
+          <li>
+            <label for="Manual Software Install">Manual Software Install</label>
+            <input type="checkbox" id="Manual Software Install" />
+            <ol>
+              <li class="file"><a href="https://drive.google.com/uc?export=view&id=0B8J79RkwBgvmNlgyYXpydjEtWTQ#zoom=170" target="kbtable">Manual Software Install</a></li>
+            </ol>
+          </li>
+
+
+          
+          <li>
+            <label for="Microsoft Office">Microsoft Office</label>
+            <input type="checkbox" id="Microsoft Office" />
+            <ol>
+
+              <!---Outlook Folder--->
+              <li>
+                <label for="Outlook">Outlook</label>
+                <input type="checkbox" id="Outlook" />
+                <ol>
+                  <!---Files go here as <li> items--->
+                  <li class="file"><a href="https://drive.google.com/uc?export=view&id=0B8J79RkwBgvmNlgyYXpydjEtWTQ#zoom=170" target="kbtable">Outlook Quick Reference Guide</a></li>
+                  <li class="file"><a href="https://drive.google.com/uc?export=view&id=0B8J79RkwBgvmNlgyYXpydjEtWTQ#zoom=170" target="kbtable">Adding a New Mailbox Tab</a></li>
+                  <li class="file"><a href="https://drive.google.com/uc?export=view&id=0B8J79RkwBgvmNlgyYXpydjEtWTQ#zoom=170" target="kbtable">Granting Access to a Shared Mailbox as an Admin</a></li>
+
+
+                </ol>
+
+              </li>
+
+              <!---Excel--->
+              <li>
+                <label for="Excel">Excel</label>
+                <input type="checkbox" id="Excel" />
+                <ol>
+                  <!---Files go here as <li> items--->
+                  <li class="file"><a href="https://drive.google.com/uc?export=view&id=0B8J79RkwBgvmNlgyYXpydjEtWTQ#zoom=170" target="kbtable">Excel Quick Reference Guide</a></li>
+                  <li class="file"><a href="https://drive.google.com/uc?export=view&id=0B8J79RkwBgvmNlgyYXpydjEtWTQ#zoom=170" target="kbtable">Excel Tutorial</a></li>
+                  <li class="file"><a href="https://drive.google.com/uc?export=view&id=0B8J79RkwBgvmNlgyYXpydjEtWTQ#zoom=170" target="kbtable">Reveal Hidden Sheets (tabs)</a></li>
+
+                </ol>
+
+              </li>
+
+              <!---Word--->
+              <li>
+                <label for="Word">Word</label>
+                <input type="checkbox" id="Word" />
+                <ol>
+                  <!---Files go here as <li> items--->
+                  <li class="file"><a href="https://drive.google.com/uc?export=view&id=0B8J79RkwBgvmNlgyYXpydjEtWTQ#zoom=170" target="kbtable">Word Quick Reference Guide</a></li>
+                </ol>
+              </li>
+
+              <!---PowerPoint--->
+              <li>
+                <label for="PowerPoint">PowerPoint</label>
+                <input type="checkbox" id="PowerPoint" />
+                <ol>
+                  <!---Files go here as <li> items--->
+                  <li class="file"><a href="https://drive.google.com/uc?export=view&id=0B8J79RkwBgvmNlgyYXpydjEtWTQ#zoom=170" target="kbtable">PowerPoint Quick Reference Guide</a></li>
+                </ol>
+              </li>
+
+
+            </ol>
+          </li>
+
+          <!---WebEX Folder--->
+          <li>
+            <label for="WebEx">WebEx</label>
+            <input type="checkbox" id="WebEx" />
+            <ol>
+
+
+              <li class="file"><a href="https://drive.google.com/uc?export=view&id=0B8J79RkwBgvmNlgyYXpydjEtWTQ#zoom=170" target="kbtable">Webex Guide</a></li>
+
+
+            </ol>
+          </li>
+
+
+          <!---Sophos/SecurDoc--->
+          <li>
+            <label for="Sophos/SecurDoc">Sophos/SecurDoc</label>
+            <input type="checkbox" id="Sophos/SecurDoc" />
+
+            <ol>
+              <!---SecureDoc--->
+              <li>
+                <label for="SecureDoc">SecureDoc</label>
+                <input type="checkbox" id="SecureDoc" />
+                <ol>
+                  <li class="file"><a href="https://drive.google.com/uc?export=view&id=0B8J79RkwBgvmNlgyYXpydjEtWTQ#zoom=170" target="kbtable">SecureDoc Challenge Recovery Guide</a></li>
+
+
+                </ol>
+              </li>
+
+
+              <!---Sophos--->
+              <li>
+                <label for="Sophos">Sophos</label>
+                <input type="checkbox" id="Sophos" />
+                <ol>
+                  <li class="file"><a href="https://drive.google.com/uc?export=view&id=0B8J79RkwBgvmNlgyYXpydjEtWTQ#zoom=170" target="kbtable">Sophos Challenge Recovery Guide</a></li>
+
+                </ol>
+              </li>
+
+
+            </ol>
+
+          </li>
+
+
+          <!---SharePoint--->
+          <li>
+            <label for="SharePoint">SharePoint</label>
+            <input type="checkbox" id="SharePoint" />
+            <ol>
+              <!---Files go here as <li> items--->
+              <li class="file"><a href="https://drive.google.com/uc?export=view&id=0B8J79RkwBgvmNlgyYXpydjEtWTQ#zoom=170" target="kbtable">SharePoint 2013 Tutorial</a></li>
+
+            </ol>
+
+          </li>
+
+          <!---Windows 10--->
+          <li>
+            <label for="Windows10">Windows 10</label>
+            <input type="checkbox" id="Windows10" />
+            <ol>
+              <li class="file"><a href="https://drive.google.com/uc?export=view&id=0B8J79RkwBgvmNlgyYXpydjEtWTQ#zoom=170" target="kbtable">Windows 10 Guide</a></li>
+
+            </ol>
+          </li>
+
+
+        </ol>
+      </li>
+
+
+      
+
+      <li>
+        <label for="Hardware">N/A</label>
+        <input type="checkbox" id="Hardware" />
+        <ol>
+
+
+          <!---Mobile Devices--->
+          <li>
+            <label for="MobileDevices">Mobile Devices</label>
+            <input type="checkbox" id="MobileDevices" />
+
+            <ol>
+              <!---SecureHub/SecureMail--->
+              <li>
+                <label for="SecureHub">SecureHub/SecureMail</label>
+                <input type="checkbox" id="SecureHub" />
+                <ol>
+                  <li>
+                    <label for="Android">Android</label>
+                    <input type="checkbox" id="Android" />
+                    <ol>
+
+                      <li class="file"><a href="https://drive.google.com/uc?export=view&id=0B8J79RkwBgvmNlgyYXpydjEtWTQ#zoom=170" target="kbtable">Install Guide</a></li>
+                      <li class="file"><a href="https://drive.google.com/uc?export=view&id=0B8J79RkwBgvmNlgyYXpydjEtWTQ#zoom=170" target="kbtable">User Guide</a></li>
+
+                    </ol>
+                  </li>
+
+
+                  <li>
+                    <label for="iPhone">iPhone</label>
+                    <input type="checkbox" id="iPhone" />
+                    <ol>
+
+                      <li class="file"><a href="https://drive.google.com/uc?export=view&id=0B8J79RkwBgvmNlgyYXpydjEtWTQ#zoom=170" target="kbtable">Install Guide</a></li>
+                      <li class="file"><a href="https://drive.google.com/uc?export=view&id=0B8J79RkwBgvmNlgyYXpydjEtWTQ#zoom=170" target="kbtable">User Guide</a></li>
+
+                    </ol>
+                  </li>
+
+
+                </ol>
+              </li>
+
+
+              <!---Mobile Device Agreement--->
+              <li>
+                <label for="Mobile Device Agreement">Mobile Device Agreement</label>
+                <input type="checkbox" id="Mobile Device Agreement" />
+                <ol>
+                  <li class="file"><a href="https://drive.google.com/uc?export=view&id=0B8J79RkwBgvmNlgyYXpydjEtWTQ#zoom=170" target="kbtable">Mobile Device Agreement</a></li>
+
+                </ol>
+              </li>
+
+
+            </ol>
+
+          </li>
+
+          <!---Cisco Desk Phone--->
+          <li>
+            <label for="CiscoPhone">Cisco Desk Phone</label>
+            <input type="checkbox" id="CiscoPhone" />
+            <ol>
+              <li class="file"><a href="https://drive.google.com/uc?export=view&id=0B8J79RkwBgvmNlgyYXpydjEtWTQ#zoom=170" target="kbtable">Login Guide</a></li>
+              <li class="file"><a href="https://drive.google.com/uc?export=view&id=0B8J79RkwBgvmNlgyYXpydjEtWTQ#zoom=170" target="kbtable">Cisco Phone User Guide</a></li>
+
+            </ol>
+          </li>
+
+
+        </ol>
+      </li>
+
+
+      <!---Network--->
+
+      <li>
+        <label for="Network">N/A</label>
+        <input type="checkbox" id="Network" />
+        <ol>
+
+
+          <!---Network/Shared Drives--->
+          <li>
+            <label for="Network/Shared Drives">Network/Shared Drives</label>
+            <input type="checkbox" id="Network/Shared Drives" />
+            <ol>
+              <li class="file"><a href="https://drive.google.com/uc?export=view&id=0B8J79RkwBgvmNlgyYXpydjEtWTQ#zoom=170" target="kbtable">Map a Network/Shared Drive</a></li>
+
+            </ol>
+          </li>
+
+          <!---Spam and Email Archiving--->
+          <li>
+            <label for="Spam and Email Archiving">Spam/Email Archiving</label>
+            <input type="checkbox" id="Spam and Email Archiving" />
+            <ol>
+
+              <!---DSMail (Archived Emails)--->
+              <li>
+                <label for="DsMail">DsMail (Archived Emails)</label>
+                <input type="checkbox" id="DsMail" />
+                <ol>
+                  <li class="file"><a href="https://drive.google.com/uc?export=view&id=0B8J79RkwBgvmNlgyYXpydjEtWTQ#zoom=170" target="kbtable">DSMail Guide</a></li>
+
+                </ol>
+              </li>
+
+              <!---Spam Email Filtering--->
+              <li>
+                <label for="Spam Email Filtering">Spam Email Filtering</label>
+                <input type="checkbox" id="Spam Email Filtering" />
+                <ol>
+                  <li class="file"><a href="https://drive.google.com/uc?export=view&id=0B8J79RkwBgvmNlgyYXpydjEtWTQ#zoom=170" target="kbtable">Email Filtering FAQ</a></li>
+                  <li class="file"><a href="https://drive.google.com/uc?export=view&id=0B8J79RkwBgvmNlgyYXpydjEtWTQ#zoom=170" target="kbtable">Release Quaratined Emails</a></li>
+                </ol>
+              </li>
+
+            </ol>
+          </li>
+
+          <!---VPN--->
+          <li>
+            <label for="VPN">VPN</label>
+            <input type="checkbox" id="VPN" />
+            <ol>
+              <li class="file"><a href="https://drive.google.com/uc?export=view&id=0B8J79RkwBgvmNlgyYXpydjEtWTQ#zoom=170" target="kbtable">VPN Guide- Non-PGE Win7 PC</a></li>
+              <li class="file"><a href="https://drive.google.com/uc?export=view&id=0B8J79RkwBgvmNlgyYXpydjEtWTQ#zoom=170" target="kbtable">How to create VPN accounts</a></li>
+              <li class="file"><a href="https://drive.google.com/uc?export=view&id=0B8J79RkwBgvmNlgyYXpydjEtWTQ#zoom=170" target="kbtable">VPN Quick Start - PGE Laptops</a></li>
+              <li class="file"><a href="https://drive.google.com/uc?export=view&id=0B8J79RkwBgvmNlgyYXpydjEtWTQ#zoom=170" target="kbtable">VPN User Guide - Saving a RDP icon to your desktop</a></li>
+            </ol>
+          </li>
+
+
+        </ol>
+      </li>
+
+
+      <!---Forms--->
+      <li>
+        <label for="Forms">N/A</label>
+        <input type="checkbox" id="Forms" />
+        <ol>
+
+
+          <li class="file"><a href="https://drive.google.com/uc?export=view&id=0B8J79RkwBgvmNlgyYXpydjEtWTQ#zoom=170" target="kbtable">Onboarding  Document</a></li>
+          <li class="file"><a href="https://drive.google.com/uc?export=view&id=0B8J79RkwBgvmNlgyYXpydjEtWTQ#zoom=170" target="kbtable">Maximo - Manual Incident Form</a></li>
+          <li class="file"><a href="https://drive.google.com/uc?export=view&id=0B8J79RkwBgvmNlgyYXpydjEtWTQ#zoom=170" target="kbtable">Social Media - PGE Internet Access Request</a></li>
+
+        </ol>
+      </li>
+
+
+    </ol>
+
+
+  </lsb2>
+
+
+</body>
+
+</html>
+  
+  
+
+</body>
+
+</html>

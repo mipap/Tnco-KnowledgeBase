@@ -1,0 +1,828 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>OnBoarding 2018</title>
+        <link rel="icon" href="icon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel="stylesheet" href="https://team.wow2.telenor.com/sites/cs_TnCOServiceDesk/SiteAssets/SitePages/css/kb2.css">
+    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+    <link href="telenor.ttf" rel="stylesheet">
+    
+    <style>
+        *{
+        box-sizing: border-box;
+    }
+    
+    body {
+        margin: 0;
+        font-family: 'Telenor', sans-serif;
+    }
+    
+    .navbar {
+        overflow: hidden;
+        background-color: #13C6FF;
+        font-family: 'Telenor',Arial;
+        font-style: bold;
+    }
+    
+    .navbar a {
+        float: left;
+        font-size: 16px;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+    
+    .dropdown {
+        float: left;
+        overflow: hidden;
+    }
+    .dropdown2 {
+      float: left;
+      overflow: hidden;
+    }
+    
+    .dropdown .dropbtn {
+        font-size: 16px;    
+        border: none;
+        outline: none;
+        color: white;
+        padding: 14px 16px;
+        background-color: inherit;
+        font-family: 'Telenor',Arial, Helvetica, sans-serif;
+    }
+    
+    .dropdown2 .dropbtn2 {
+        font-size: 16px;    
+        border: none;
+        outline: none;
+        color: white;
+        padding: 14px 16px;
+        background-color: inherit;
+        font-family: 'Telenor',Arial, Helvetica, sans-serif;
+    }
+    .navbar a:hover, .dropdown2:hover .dropbtn2 {
+        background-color: #13C6FF;
+        font-family: 'Telenor',Arial, Helvetica, sans-serif;
+        cursor: pointer;
+    }
+    
+    
+    .dropdown2-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        width: 100%;
+        left: 0;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 100;
+        font-family: 'Telenor',Arial, Helvetica, sans-serif;
+    }
+    
+    .dropdown-content .header {
+        background: #13C6FF;
+        padding: 16px;
+        color: white;
+        font-family: 'Telenor',Arial, Helvetica, sans-serif;
+    }
+    
+    .dropdown2-content .header {
+        background: #13C6FF;
+        padding: 16px;
+        color: white;
+        font-family: 'Telenor',Arial, Helvetica, sans-serif;
+    }
+    
+    .dropdown:hover .dropdown-content {
+        display: block;
+        
+    }
+    
+    .dropdown2:hover .dropdown2-content {
+        display: block;
+    }
+    
+    /* Create three equal columns that floats next to each other */
+    .column {
+        float: left;
+        width: 25%;
+        line-height: 100%;
+        padding: 10px;
+        background-color: white; 
+        height: 100%;
+    }
+    
+    .column a {
+        float: none;
+        color: black;
+        padding: 16px;
+        text-decoration: none;
+        display: block;
+        text-align: left;
+    
+    }
+    
+    .column a:hover {
+        background-color: #ddd;
+        height: 6%;
+    }
+    
+    /* Clear floats after the columns */
+    .row:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+    .container {
+        overflow: hidden;
+        background-color: #13C6FF;
+        font-family: 'Telenor',Arial;
+        font-style: bold;
+    }
+    
+    .container a {
+        float: left;
+        font-size: 16px;
+        color: white;
+        text-align: center;
+        padding: 16px 16px;
+        text-decoration: none;
+    }
+    
+    .dropdown {
+        float: left;
+        overflow: hidden;
+    }
+    
+    .dropdown2 {
+      float: left;
+      overflow: hidden;
+    }
+    
+    .list {
+        float: left;
+        overflow: hidden;
+    }
+    
+    .kb {
+        float: left;
+        overflow: hidden;
+    }
+    .bp {
+        float: left;
+        overflow: hidden;
+    }
+    
+    .dropdown .dropbtn {
+        font-size: 16px;    
+        border: none;
+        outline: none;
+        color: white;
+        padding: 14px 16px;
+        background-color: #13C6FF;
+        font-family: 'Telenor',Arial, Helvetica, sans-serif;
+    }
+    
+    .dropdown2 .dropbtn2 {
+        font-size: 16px;    
+        border: none;
+        outline: none;
+        color: white;
+        padding: 14px 16px;
+        background-color: #13C6FF;
+        font-family: 'Telenor',Arial, Helvetica, sans-serif;
+    }
+    
+    .list .listbtn {
+        font-size: 16px;    
+        border: none;
+        outline: none;
+        color: white;
+        padding: 14px 16px;
+        background-color: #13C6FF;
+        font-family: 'Telenor',Arial, Helvetica, sans-serif;
+    }
+    
+    .kb .kbbtn {
+        font-size: 16px;    
+        border: none;
+        outline: none;
+        color: white;
+        padding: 14px 16px;
+        background-color: #13C6FF;
+        font-family: 'Telenor',Arial, Helvetica, sans-serif;
+    }
+    
+    .bp .bpbtn {
+        font-size: 16px;    
+        border: none;
+        outline: none;
+        color: white;
+        padding: 14px 16px;
+        background-color: #13C6FF;
+        font-family: 'Telenor',Arial, Helvetica, sans-serif;
+    }
+    
+    .container a:hover, .dropdown:hover .dropbtn {
+        background-color: #FEB100;
+        cursor: pointer;
+    }
+    
+    .container a:hover, .dropdown2:hover .dropbtn2 {
+        background-color: #FEB100;
+        cursor: pointer;
+    }
+    
+    .container a:hover, .list:hover .listbtn {
+        background-color: #FEB100;
+        cursor: pointer;
+    }
+    
+    .container a:hover, .kb:hover .kbbtn {
+        background-color: #FEB100;
+        cursor: pointer;
+    }
+    
+    .container a:hover, .bp:hover .bpbtn {
+        background-color: #FEB100;
+        cursor: pointer;
+    }
+    
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 100;
+    }
+    
+    .dropdown2-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 100;
+    }
+    
+    .list-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 100;
+    }
+    .kb-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+    }
+    
+    .bp-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 100;
+    }
+    
+    .dropdown-content a {
+        float: none;
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        text-align: left;
+    }
+    
+    .dropdown2-content a {
+        float: none;
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        text-align: left;
+    }
+    .list-content a {
+        float: none;
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        text-align: left;
+    }
+    .kb-content a {
+        float: none;
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        text-align: left;
+    }
+    
+    .bp-content a {
+        float: none;
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        text-align: left;
+    }
+    
+    .dropdown-content a:hover {
+        background: #ddd;
+    }
+    .dropdown2-content a:hover {
+        background-color: #ddd;
+    }
+    .column a:hover {
+      background-color: #ddd;
+    }
+    .list-content a:hover {
+        background-color: #ddd;
+    }
+    .kb-content a:hover {
+        background-color: #ddd;
+    }
+    
+    
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+    .dropdown2:hover .dropdown2-content {
+        display: block;
+    }
+    .list:hover .list-content {
+        display: block;
+    }
+    .kb:hover .kb-content {
+        display: block;
+    }
+    
+    .bp:hover .bp-content {
+        display: block;
+    }
+    .hedding{
+        align-content: center;
+        padding: 2.8rem;
+        background: url(http://bgfons.com/uploads/lines/lines_texture1091.jpg);
+        color: #13C6FF;
+        
+    }
+    .hedding .gradient:hover{
+        background-position: 100% 100%;
+            text-shadow: 0 0 20px black;
+            color: white !important;
+
+            }
+    .words{
+    background: white;
+    border: 3px solid #13C6FF;
+    color: black;
+    width: 100%;
+    position: relative;
+    text-decoration: none;
+    }
+    h1{
+        font-size: 5em !important;
+        font-weight: bolder !important;
+        color: white !important;
+        margin-top: -5%;
+    }
+    h3{
+        color: white !important;
+        font-weight: 700 !important;
+        font-size: 1.3em !important;
+    }
+    h2{
+        font-style: bold !important;
+        font-weight: 900 !important;
+        font-size: 2em !important;
+    }
+    .m-backtotop {
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  position: fixed;
+  bottom: -50px;
+  right: 20px;
+  width: 50px;
+  height: 50px;
+  background: #222;
+  border-radius: 25px;
+  text-align: center;
+  border: 2px solid #fff;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  overflow: hidden;
+  color: #fff;
+}
+.m-backtotop.active {
+  bottom: 15px;
+  opacity: 1;
+}
+.m-backtotop > div {
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.m-backtotop > div.arrow {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%);
+  opacity: 1;
+}
+.m-backtotop > div.text {
+  font-size: 5px;
+  font-size: 0.5rem;
+  line-height: 10px;
+  text-transform: uppercase;
+  font-weight: 900;
+  font-family: "Open Sans", sans-serif;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translateY(50%) translateX(-50%);
+  opacity: 0;
+  margin-top: 1px;
+}
+.m-backtotop:hover {
+  transform: scale(1.1);
+  bottom: 20px;
+  cursor: pointer;
+  background: black;
+  box-shadow: 0 10px 5px rgba(0, 0, 0, 0.1);
+}
+.m-backtotop:hover > div.arrow {
+  transform: translateY(-150%) translateX(-50%);
+  opacity: 0;
+}
+.m-backtotop:hover > div.text {
+  transform: translateY(-50%) translateX(-50%);
+  opacity: 1;
+}
+
+    
+    </style>
+    </head>
+    <body>
+        <div class="container">
+            <a href="index.html">Home Page</a>
+          <div class="bp">
+            <button class="bpbtn" onclick="window.location.href='businessprocedures.html'">Business Procedures</button>
+            <div class="bp-content">
+                <a href="#">Ticket Administration</a>
+                <a href="https://team.wow2.telenor.com/sites/cs_TnCOServiceDesk/_layouts/15/start.aspx#/Knowledge%20Base%20v1/Application%20and%20Billing/Custom%20fields%2C%20Custom%20text.aspx">Custom Fields</a>
+                <a href="https://team.wow2.telenor.com/sites/cs_TnCOServiceDesk/Lists/Application%20and%20Billing%20Invalid%20Tickets/Weekly.aspx">Invalid Tickets</a>
+                <a href="https://team.wow2.telenor.com/sites/cs_TnCOServiceDesk/Knowledge%20Base%20v1/Application%20and%20Billing/Procedure%20-%20Ticket%20Escalation.aspx">Escalation</a>
+                <a href="https://team.wow2.telenor.com/sites/cs_TnCOServiceDesk/Lists/Billing%20vs%20CRM/AllItems.aspx">Billing v.s. CRM </a>
+                <a href="#">Remedy Group Admin</a>
+                <a href="https://team.wow2.telenor.com/sites/cs_TnCOServiceDesk/_layouts/15/start.aspx#/Knowledge%20Base%20v1/Application%20and%20Billing/Prospect%20Customer.aspx">Prospect Customer</a>        
+                <a href="https://team.wow2.telenor.com/sites/cs_TnCOServiceDesk/Knowledge%20Base%20v1/Application%20and%20Billing/Procedure%20-%20Order%20Cancellations.aspx">Order Cancellation</a>
+                <a href="https://team.wow2.telenor.com/sites/cs_TnCOServiceDesk/Knowledge%20Base%20v1/Application%20and%20Billing/Reporting/Reporting.aspx">Reporting</a>
+                <a href="https://team.wow2.telenor.com/sites/cs_TnCOServiceDesk/Knowledge%20Base%20v1/Application%20and%20Billing/Billing/Billing%20Instructions%20-%20Legacy%20Invoice%20Query.aspx">Legacy Invoice Query </a>
+            </div>
+          </div>
+          <div class="dropdown">
+            <button onclick="window.location.href='teammembers.html'" class="dropbtn">Team Members</button>
+            <div id="myDropdown" class="dropdown-content">
+                <input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()">
+                <a href="teammembers.html#Csaba">Nagy Csaba</a>
+              <a href="teammembers.html#DUSA">Dušan Vasić (DUSA)</a>
+              <a href="teammembers.html#MTUR">Marko Turković (MTUR)</a>
+              <a href="teammembers.html#MIPAP">Miloš Papić (MIPAP)</a>
+              <a href="teammembers.html#PJOV">Pavle Jovanović (PJOV)</a>
+              <a href="teammembers.html#JONV">Jovana Nikolić (JONV)</a>
+              <a href="teammembers.html#REHIL">Rene Hiller (REHIL)</a>
+              <a href="teammembers.html#PSIM">Petar Simić (PSIM)</a>
+              <a href="teammembers.html#JOVC">Jovana Jovanović (JOVC)</a>
+              <a href="teammembers.html#MVOJ">Marko Vojinović (MVOJ)</a>
+              <a href="teammembers.html#KPEJ">Kristina Pejanović (KPEJ)</a>
+              <a href="teammembers.html#VBEG">Višnja Begović (VBEG)</a>
+              <a href="teammembers.html#ARIZ">Miloš Arizanović (ARIZ)</a>
+              <a href="teammembers.html#IVRA">Ivana Radojičić (IVRA)</a>
+              <a href="teammembers.html#JKAT">Jelena Katanić (JKAT)**</a>
+              <a href="teammembers.html#STBR">Staša Počuča (STBR)**</a>
+              <a href="#">**Maternaty Leave</a>
+            </div>
+          </div>
+        
+          <div class="list">
+            <button class="listbtn">Tools</button>
+            <div class="list-content">
+                <a href="https://team.wow2.telenor.com/sites/cs_TnCOServiceDesk/Knowledge%20Base%20v1/Application%20and%20Billing/Tools/Tools%20-%20Remedy.aspx">Remedy</a>
+                <a href="https://sso.veris.telenor.eu/?clientName=CRM&referer=https%3A%2F%2Fbss.veris.telenor.eu%2Fcrm%2Findex_sso.jsp">Veris</a>
+                <a href="#">JIRA</a>
+                <a href="http://112.25.233.117:58080/OnlineServer/LoginAction.action">DMP Defect</a>
+                <a href="https://verisdmp.support/OnlineServer/LoginAction.action">AISD DMP</a>
+                <a href="#">Citrix BSS Portal</a>
+                <a href="https://team.wow2.telenor.com/sites/cs_TnCOServiceDesk/Knowledge%20Base%20v1/Application%20and%20Billing/Tools/TDC%20Wholesale.aspx">TDC WholeSale</a>
+                <a href="https://team.wow2.telenor.com/sites/cs_TnCOServiceDesk/Knowledge%20Base%20v1/Application%20and%20Billing/Tools/Columbine.aspx">Columbine</a>
+                <a href="https://team.wow2.telenor.com/sites/cs_TnCOServiceDesk/Knowledge%20Base%20v1/Application%20and%20Billing/Tools/DSLMan.aspx">DSL Man</a>
+                <a href="https://team.wow2.telenor.com/sites/cs_TnCOServiceDesk/Knowledge%20Base%20v1/Application%20and%20Billing/Tools/FASIN.aspx">FASIN</a>
+            </div>
+          </div>
+        
+          <div class="navbar">
+          <div class="dropdown2">
+            <button onclick="window.location.href='knowledgebasepage.html'" class="dropbtn2">Knowledge Base 
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div id="myDropdown2" class="dropdown2-content">
+              <div class="header">
+                <h2>Application & Billing Knowledge Base</h2>
+                <input type="text" placeholder="Search.." id="myInput2" onkeyup="filterFunction2()">
+              </div> 
+              <div class="row">
+                <div class="column">
+                  <h3 style="color:black !important;">Mobile Support</h3><p>Members-(PSIM KPEJ JONV)</p>
+                  <br>
+                  <a href="https://team.wow2.telenor.com/sites/cs_TnCOServiceDesk/Knowledge%20Base%20v1/Application%20and%20Billing/Mobile/Mobile%20Instructions%20-%20Assigning%20ViaPlay%20Voucher.aspx">Assigning ViaPlay Voucher</a>
+                  <a href="https://team.wow2.telenor.com/sites/cs_TnCOServiceDesk/Knowledge%20Base%20v1/Application%20and%20Billing/Mobile/Mobile%20Instructions%20-%20Viaplay%20vouchers.aspx">Viaplay Voucher(Old procedure)</a>
+                  <a href="https://team.wow2.telenor.com/sites/cs_TnCOServiceDesk/Knowledge%20Base%20v1/Application%20and%20Billing/Mobile/Mobile%20Instructions%20-%20Reserved%20Number.aspx">Reserved Number</a>
+        <a href="https://team.wow2.telenor.com/sites/cs_TnCOServiceDesk/Knowledge%20Base%20v1/Application%20and%20Billing/Workflow%20search%20-%20System%20exception%20-%20The%20account%20is%20inactive.aspx">Workflow search - System exception - The account is inactive
+        </a>
+                  <a href="https://team.wow2.telenor.com/sites/cs_TnCOServiceDesk/Knowledge%20Base%20v1/Application%20and%20Billing/Mobile/Mobile%20Instructions%20-%20Batch%20order%20checking%20status.aspx">Batch order checking status</a>
+                  <a href="https://team.wow2.telenor.com/sites/cs_TnCOServiceDesk/Knowledge%20Base%20v1/Application%20and%20Billing/Mobile/Mobile%20Instructions%20-%20Check%20if%20the%20number%20is%20online.aspx">Check if the number is online</a>
+                  <a href="https://team.wow2.telenor.com/sites/cs_TnCOServiceDesk/Knowledge%20Base%20v1/Application%20and%20Billing/Mobile/Mobile%20Instructions%20-%20Checking%20completed%20orders.aspx">Checking completed orders</a>
+                  <a href="https://team.wow2.telenor.com/sites/cs_TnCOServiceDesk/Knowledge%20Base%20v1/Application%20and%20Billing/Mobile/Mobile%20Instructions%20-%20Creating%20announcement.aspx">Create Announcement</a>
+                  <a href="https://team.wow2.telenor.com/sites/cs_TnCOServiceDesk/Knowledge%20Base%20v1/Application%20and%20Billing/Mobile/Mobile%20Instructions%20-%20Log%20into%20OCH%20KB.aspx">Log into OCH KB</a>
+                  <a href="https://team.wow2.telenor.com/sites/cs_TnCOServiceDesk/Knowledge%20Base%20v1/Application%20and%20Billing/Mobile/Mobile%20Instructions%20-%20Attachments%20from%20AI.aspx?WikiPageMode=Edit&InitialTabId=Ribbon.EditingTools.CPEditTab&VisibilityContext=WSSWikiPage">Attachments from AI</a>
+                  <a href="https://team.wow2.telenor.com/sites/cs_TnCOServiceDesk/Knowledge%20Base%20v1/Application%20and%20Billing/Mobile/Mobile%20Instructions%20-%20Checking%20DEFECT.aspx?WikiPageMode=Edit&InitialTabId=Ribbon.EditingTools.CPEditTab&VisibilityContext=WSSWikiPage">Checking DEFECT</a>
+                  <a href="https://team.wow2.telenor.com/sites/cs_TnCOServiceDesk/Knowledge%20Base%20v1/Application%20and%20Billing/Mobile/Mobile%20Instructions%20-%20Escalation%20ticket%20in%20Remedy.aspx">Escalation ticket in Remedy</a>
+                  <a href="https://team.wow2.telenor.com/sites/cs_TnCOServiceDesk/Knowledge%20Base%20v1/Application%20and%20Billing/Mobile/Mobile%20Instructions%20-%20Finding%20user%20in%20Remedy.aspx?WikiPageMode=Edit&InitialTabId=Ribbon.EditingTools.CPEditTab&VisibilityContext=WSSWikiPage">Finding user in Remedy</a>
+                  <a href="https://team.wow2.telenor.com/sites/cs_TnCOServiceDesk/Knowledge%20Base%20v1/Application%20and%20Billing/Mobile/Mobile%20Instructions%20-%20Searching%20Remedy%20ticket%20in%20Remedy.aspx?WikiPageMode=Edit&InitialTabId=Ribbon.EditingTools.CPEditTab&VisibilityContext=WSSWikiPage">Searching Remedy ticket in Remedy</a>
+                  <a href="https://team.wow2.telenor.com/sites/cs_TnCOServiceDesk/Knowledge%20Base%20v1/Application%20and%20Billing/Mobile/Mobile%20Instructions%20-%20Searching%20Vendor%20ticket%20in%20Remedy.aspx">Searching Vendor ticket in Remedy</a>
+                  <a href="https://team.wow2.telenor.com/sites/cs_TnCOServiceDesk/Knowledge%20Base%20v1/Application%20and%20Billing/Fixed/Mobile%20instructions%20-%20Order%20troubleshooting%20-%20NP%20Wait%20for%20Effective%20Date.aspx">NP Workflow, Check Effective day</a>
+                  <a href="https://team.wow2.telenor.com/sites/cs_TnCOServiceDesk/Knowledge%20Base%20v1/Application%20and%20Billing/Mobile/Mobile%20Instructions%20-%20Procedure%20-%20Office%20365.aspx">Procedure - Office 365</a>
+                  <a href="https://team.wow2.telenor.com/sites/cs_TnCOServiceDesk/Knowledge%20Base%20v1/Application%20and%20Billing/Mobile/Mobile%20Instructions%20-%20How%20to%20handle%20attachment%20in%20Remedy.aspx">How to handle attachment in Remedy </a>
+                  <a href="https://team.wow2.telenor.com/sites/cs_TnCOServiceDesk/Knowledge%20Base%20v1/Application%20and%20Billing/Mobile/Mobile%20Instructions%20-%20Push%20notification%20(e-mail).aspx">Push Notification (missing e-mail)</a>
+                </div>
+                <div class="column">
+                  <h3 style="color:black !important;">Fixed Support</h3><p>Members-(MIPAP VBEG MTUR)</p>
+                  <br>
+                  <a href="https://team.wow2.telenor.com/sites/cs_TnCOServiceDesk/Knowledge%20Base%20v1/Application%20and%20Billing/Fixed/Fixed%20Instructions%20-%20How%20to%20check%20reserved%20number.aspx">How to check reserved number in Veris</a>
+                  <a href="https://team.wow2.telenor.com/sites/cs_TnCOServiceDesk/Knowledge%20Base%20v1/Application%20and%20Billing/Fixed/Fixed%20Instructions%20-%20TnCO%20Veris%20CRM%20-%20New%20Connection.aspx">Order Management / New Connection</a>
+                  <a href="https://team.wow2.telenor.com/sites/cs_TnCOServiceDesk/Knowledge%20Base%20v1/Application%20and%20Billing/Fixed/Fixed%20Instructions%20-%20TnCO%20Veris%20CRM%20-%20Termination.aspx">Order Management / Termination</a>
+                  <a href="https://team.wow2.telenor.com/sites/cs_TnCOServiceDesk/Knowledge%20Base%20v1/Application%20and%20Billing/Fixed/Fixed%20Instructions%20-%20TnCO%20Veris%20CRM%20-%20POA%20step%20in%20order.aspx">Order Management / POA step in order</a>
+                  <a href="https://team.wow2.telenor.com/sites/cs_TnCOServiceDesk/_layouts/15/start.aspx#/Knowledge%20Base%20v1/Application%20and%20Billing/Fixed/NP%20CODE%20REJECTION.aspx">NP CODE REJECTION</a>
+                  <a href="https://team.wow2.telenor.com/sites/cs_TnCOServiceDesk/Knowledge%20Base%20v1/Application%20and%20Billing/Fixed/Fixed%20Instructions%20-%20TnCO%20Veris%20CRM%20-%20Order%20Management%20-%20TDC%20Group%20-%20Jump%20New%20Connection%20PSTN%20-%20%E2%80%9Dwait%20file%20step%E2%80%9D.aspx">Jump New Connection PSTN-"wait file step"</a>
+                  <a href="https://team.wow2.telenor.com/sites/cs_TnCOServiceDesk/Knowledge%20Base%20v1/Application%20and%20Billing/Fixed/Fixed%20Instructions%20-%20Checking%20DEFECT.aspx?WikiPageMode=Edit&InitialTabId=Ribbon.EditingTools.CPEditTab&VisibilityContext=WSSWikiPage">Checking DEFECT</a>
+                  <a href="https://team.wow2.telenor.com/sites/cs_TnCOServiceDesk/_layouts/15/start.aspx#/Knowledge%20Base%20v1/Application%20and%20Billing/Prospect%20Customer.aspx">Prospect Customer</a>
+                  <a href="https://team.wow2.telenor.com/sites/cs_TnCOServiceDesk/Knowledge%20Base%20v1/Application%20and%20Billing/Billing/Billing%20Instructions%20-%20Legacy%20Invoice%20Query.aspx">Legacy Invoice Query </a>          
+                  <a href="https://team.wow2.telenor.com/sites/cs_TnCOServiceDesk/Knowledge%20Base%20v1/Application%20and%20Billing/Fixed/Fixed%20instructions%20-%20Order%20troubleshooting%20-%20VoIP%20PortIN%20%20(NP%20Rejection).aspx">VoIP PortIN (NP Rejection) </a>
+                </div>
+                <div class="column">
+                  <h3 style="color:black !important;">Channels Support</h3><p>Members-(REHIL PJOV ARIZ)</p>
+                  <br>
+                  <a href="https://team.wow2.telenor.com/sites/cs_TnCOServiceDesk/_layouts/15/start.aspx#/Knowledge%20Base%20v1/Application%20and%20Billing/Channels/%E2%80%8BChannels%20Instructions%20-%20Necessary%20information%20for%20investigation.aspx">Necessary information for investigation</a>
+                  <a href="https://team.wow2.telenor.com/sites/cs_TnCOServiceDesk/Knowledge%20Base%20v1/Application%20and%20Billing/Channels/WA%20for%20My%20Telenor%20Login(forgotten%20email).aspx">WA My Telenor LogIn</a>
+                </div>
+                <div class="column">
+                  <h3 style="color:black !important;">SAP Support</h3><p>Members-(PJOV MTUR)</p>
+                  <br>
+                  <a href="https://team.wow2.telenor.com/sites/cs_TnCOServiceDesk/Knowledge%20Base%20v1/Application%20and%20Billing/SAP/SAP%20Instructions%20-%20Checking%20orders%20for%20SAP%20issue.aspx">SAP Instructions - Checking orders for SAP issue</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="list">
+            <button class="listbtn" onclick="window.location.href='onboarding.html'">OnBoarding2018</button>
+            <div class="list-content">
+                <a href="#introduction">Introduction</a>
+                <a href="#chapter1">Chapter 1</a>
+                <a href="#">Chapter 2</a>
+                <a href="#">Chapter 3</a>
+                <a href="#">Chapter 4</a>
+                <a href="#">Quiz</a>
+                
+            </div>
+          </div> 
+        </div>
+        
+        
+        <div class="tazi">
+        
+        
+        <style type="text/css">
+        input[type=text] {
+            width: 160px;
+            box-sizing: border-box;
+            border: 3px solid #ccc;
+            border-radius: 16px;
+            font-size: 16px;
+            background-color: white;
+            background-image: url('https://team.wow2.telenor.com/sites/cs_TnCOServiceDesk/Shared%20Documents/search.png');
+            background-position: 10px 10px; 
+            background-repeat: no-repeat;
+            padding: 16px 20px 16px 50px;
+            -webkit-transition: width 0.4s ease-in-out;
+            transition: width 0.4s ease-in-out;
+        }
+        
+        input[type=text]:focus {
+            width: 100%;
+        }
+        </style>
+        
+        
+        
+        </div>    
+        </div>
+        
+        <script>
+        /* Search script za KnowledgeBase*/
+        function myFunction2() {
+            document.getElementById("myDropdown2").classList.toggle("show");
+        }
+        
+        function filterFunction2() {
+            var input, filter, ul, li, a, i;
+            input = document.getElementById("myInput2");
+            filter = input.value.toUpperCase();
+            div = document.getElementById("myDropdown2");
+            a = div.getElementsByTagName("a");
+            for (i = 0; i < a.length; i++) {
+                if (a[i].innerHTML.toUpperCase().indexOf(filter) > -1) {
+                    a[i].style.display = "";
+                } else {
+                    a[i].style.display = "none";
+                }
+            }
+        }
+        </script>
+        
+        
+        
+        <script>
+        /* When the user clicks on the button,
+        toggle between hiding and showing the dropdown content */
+        function myFunction() {
+            document.getElementById("myDropdown").classList.toggle("show");
+        }
+        
+        function filterFunction() {
+            var input, filter, ul, li, a, i;
+            input = document.getElementById("myInput");
+            filter = input.value.toUpperCase();
+            div = document.getElementById("myDropdown");
+            a = div.getElementsByTagName("a");
+            for (i = 0; i < a.length; i++) {
+                if (a[i].innerHTML.toUpperCase().indexOf(filter) > -1) {
+                    a[i].style.display = "";
+                } else {
+                    a[i].style.display = "none";
+                }
+            }
+        }
+        </script>
+        
+        <script>
+        /* When the user clicks on the button,
+        toggle between hiding and showing the dropdown content */
+        function myFunction1() {
+            document.getElementById("myDropdown1").classList.toggle("show");
+        }
+        
+        function filterFunction1() {
+            var input, filter, ul, li, a, i;
+            input = document.getElementById("myInput1");
+            filter = input.value.toUpperCase();
+            div = document.getElementById("myDropdown1");
+            a = div.getElementsByTagName("a");
+            for (i = 0; i < a.length; i++) {
+                if (a[i].innerHTML.toUpperCase().indexOf(filter) > -1) {
+                    a[i].style.display = "";
+                } else {
+                    a[i].style.display = "none";
+                }
+            }
+        }
+        </script>
+
+<div class="m-backtotop" aria-hidden="true">
+	<div class="arrow">
+		<i class="fa fa-arrow-up"></i>
+	</div>
+	<div class="text">
+		Back to top
+	</div>
+</div>
+  <script src='https://code.jquery.com/jquery-3.2.1.js'></script>
+<script src='https://use.fontawesome.com/b5bf1bd49e.js'></script>
+<script>
+    var toggleHeight = $(window).outerHeight() * 2;
+
+$(window).scroll(function() {
+	if ($(window).scrollTop() > toggleHeight) {
+		//Adds active class to make button visible
+		$(".m-backtotop").addClass("active");
+		
+		//Just some cool text changes
+		$('h1 span').text('TA-DA! Now hover it and hit dat!')
+		
+	} else {
+		//Removes active class to make button visible
+		$(".m-backtotop").removeClass("active");
+		
+		//Just some cool text changes
+		$('h1 span').text('(start scrolling)')
+	}
+});
+
+
+//Scrolls the user to the top of the page again
+$(".m-backtotop").click(function() {
+	$("html, body").animate({ scrollTop: 0 }, "slow");
+	return false;
+});
+</script>
+<div class="hedding" align="center" style="height: 200px;">
+        <h1 style="font-family: 'Telenor',cursive;padding:5%;">OnBoarding 2018</h1>
+
+</div>
+<div class="words" align="center" style="background: #000;
+background: -moz-linear-gradient(-45deg, #000000 0%, #000000 25%, #1e539e 50%, #ff3083 75%, #7800a8 100%);
+background: -webkit-linear-gradient(-45deg, #000000 0%, #000000 25%, #1e539e 50%, #ff3083 75%, #7800a8 100%);
+background: linear-gradient(135deg, #000000 0%, #000000 25%, #1e539e 50%, #ff3083 75%, #7800a8 100%); color:white;">
+    <h2>This is page for OnBoarding proccess. This include flow for new collegues.</h2>
+</div>
+<div class="hedding"></div>
+
+<div class="sector" style="background:black; text-align:center; height:180px;">
+    <a href="#chapter1" ><h3 style="border:2px solid #13C6FF;width:25%;padding:3%;background:rgba(19, 198, 255,0.3);float:left;">Chapter 1</h3></a>
+    <a href="#chapter2" ><h3 style="border:2px solid #13C6FF;width:25%;padding:3%;background:rgba(19, 198, 255,0.3);float:left;">Chapter 2</h3></a>
+    <a href="#chapter3"><h3 style="border:2px solid #13C6FF;width:25%;padding:3%;background:rgba(19, 198, 255,0.3);float:left;">Chapter 3</h3></a>
+    <a href="#chapter4"><h3 style="border:2px solid #13C6FF;width:25%;padding:3%;background:rgba(19, 198, 255,0.3);float:left;">Chapter 4</h3></a>          
+  </div>
+</body>
+<body>
+    <div class="hedding" align="center">
+        <h1 id="introduction" style="padding-top:2%;">Introduction</h1>
+        <a href="#" style="text-decoration:none;"><img src="screen.png" style="align-content:center;" title="Download Introduction Document"><h3>Download!</h3></a>
+
+        <div class="words" align="left" style="background: #000;
+background: -moz-linear-gradient(-45deg, #000000 0%, #000000 25%, #1e539e 50%, #ff3083 75%, #7800a8 100%);
+background: -webkit-linear-gradient(-45deg, #000000 0%, #000000 25%, #1e539e 50%, #ff3083 75%, #7800a8 100%);
+background: linear-gradient(135deg, #000000 0%, #000000 25%, #1e539e 50%, #ff3083 75%, #7800a8 100%); color:white; border-radius:25px;">
+    <h2 style="margin-left:25px;">Introduction Flow:</h2>
+    <ul>
+    <li><h3 style="margin-left:25px;">Getting to know with work space,facilities and rest rooms.</h3></li>
+    <li><h3 style="margin-left:25px;">Getting to know with the team and <a href="teammembers.html" style="text-decoration:none; color:inherit !important;">teamembers</a> Business application and Service Desk teams.</h3></li>
+    <li><h3 style="margin-left:25px;">Setting up equipment and place for work(desk, laptop, locker, phone)</h3></li>
+    <li><h3 style="margin-left:25px;">Getting to know with basic Tools(Remedy, Veris, DMP, AISD) </h3></li>
+    <li><h3 style="margin-left:25px;">Reading our job responsibilities from SharePoint site</h3></li>
+    
+</ul>
+<h2 style="align-content:center;padding:2%;text-align:center;">Now let see what we have learn in past couple of days! Take a quick quiz and share your thoughs with your mentor.</h2>
+
+<div id="embed-quiz-351849">Loading <a href="https://www.onlinequizcreator.com/introduction/quiz-351849">Introduction</a></div>
+<script type="text/javascript">
+	var QuizWorks = window.QuizWorks || [];
+	QuizWorks.push(
+		[document.getElementById("embed-quiz-351849"), "quiz", "351849", {
+			autostart: false,
+			width: "100%",
+			height: "640px" 
+		}]
+	);
+</script>
+<script type="text/javascript" async defer src="https://d134jvmqfdbkyi.cloudfront.net/script/embed.min.js"></script>
+<BR>
+</div>
+<div class="hedding" align="center">
+        <h1 id="chapter1" style="padding-top:2%;">Chapter 1 - Let's learn basics!</h1>
+
+        <div class="words" align="left" style="background: #000;
+background: -moz-linear-gradient(-45deg, #000000 0%, #000000 25%, #1e539e 50%, #ff3083 75%, #7800a8 100%);
+background: -webkit-linear-gradient(-45deg, #000000 0%, #000000 25%, #1e539e 50%, #ff3083 75%, #7800a8 100%);
+background: linear-gradient(135deg, #000000 0%, #000000 25%, #1e539e 50%, #ff3083 75%, #7800a8 100%); color:white; border-radius:25px;">
+    <h2 style="margin-left:25px;">Chapter 1 Flow:</h2>
+    <ul>
+    <li><h3 style="margin-left:25px;">Who we are? And what are we doing?</h3></li>
+    <li><h3 style="margin-left:25px;">Tools and Application we are using(Remedy and Veris major)</h3></li>
+    <li><h3 style="margin-left:25px;">Presentation of Basic terms and procedures</h3></li>
+    <li><h3 style="margin-left:25px;"></h3></li>
+    <li><h3 style="margin-left:25px;">Reading our job responsibilities from SharePoint site</h3></li>
+    
+</ul>
+</div>
+    
+</body>
+</html>
